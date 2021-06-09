@@ -34,11 +34,11 @@ enum Genre
 	snack,
 	weapon
 }
+
 public class BuildPanel : UIObject {
 	private string upText = "▲";
 	private string downText = "▼";
 	private string middleText = "〓";
-
 
 	public GameObject drinkPanel;
     public GameObject foodPanel;
@@ -61,22 +61,26 @@ public class BuildPanel : UIObject {
 	public GameObject structureUIEntityOrigin; // for dup
 	public Sprite constructableSprite;
 	public Sprite notConstructableSprite;
-	public Dictionary<string, Sprite> genreImages;
-	Category cat;
+	public Dictionary<string, Sprite> genreImages = new Dictionary<string, Sprite>();
+	
+
     public override void Awake()
     { 
         base.Awake();
-		
     }
 
 	public void Start()
-	{
-		
+	{		
 		StartCoroutine(LateStart());
 	}
 	IEnumerator LateStart()
 	{
 		yield return null;
+		//load genre icon
+		for(int i = 0; i<System.Enum.GetNames(typeof(Genre)).Length; i++)
+		{
+			genreImages.Add(System.Enum.GetName(typeof(Genre), i), Resources.Load<Sprite>("GenreIcon/" + System.Enum.GetName(typeof(Genre), i));
+		}
 		if (isInstantiated == true)
 			yield break;
 		else
@@ -98,14 +102,14 @@ public class BuildPanel : UIObject {
 			JSONNode tempStructureJSON;
 			for(int i = 0; i<System.Enum.GetValues(typeof(Category)).Length; i++)
 			{
-				cat = (Category)i;
 				for(int j = 0; j<structuresMaxInfo[System.Enum.GetName(typeof(Category), i)].AsInt; j++)
 				{
 					//j_max 만큼 생성
 					tempStructureJSON = structuresInfo[System.Enum.GetName(typeof(Category), i)][j];
 					entity = Instantiate(structureUIEntityOrigin, categoryScrolls[i].transform).GetComponent<StructureUIEntity>();
 					entity.structureName.text = tempStructureJSON["name"];
-
+					entity.genreImage.sprite = genreImages[tempStructureJSON["genre"]];
+					entiry.
 					//entity.structureAreaImage.SetNativeSize();
 				}
 			}
