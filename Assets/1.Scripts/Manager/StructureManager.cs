@@ -107,47 +107,47 @@ public class StructureManager : MonoBehaviour
         int tempResolveAmount = 0;
         switch (tempStructureCategory)
         {
-            case "Drink":
+            case "drink":
                 tempType = DesireType.Thirsty;
                 tempResolveAmount = structureJson[tempStructureCategory][tempStructureNumber]["desire"]["thirsty"].AsInt;
                 break;
 
-            case "Food":
+            case "food":
                 tempType = DesireType.Hungry;
                 tempResolveAmount = structureJson[tempStructureCategory][tempStructureNumber]["desire"]["hungry"].AsInt;
                 break;
 
-            case "Lodge":
+            case "lodge":
                 tempType = DesireType.Sleep;
                 tempResolveAmount = structureJson[tempStructureCategory][tempStructureNumber]["desire"]["sleepy"].AsInt;
                 break;
 
-            case "Equipment":
+            case "equipment":
                 tempType = DesireType.Equipment;
                 tempResolveAmount = structureJson[tempStructureCategory][tempStructureNumber]["desire"]["equipment"].AsInt;
                 break;
 
-            case "Tour":
+            case "tour":
                 tempType = DesireType.Tour;
                 tempResolveAmount = structureJson[tempStructureCategory][tempStructureNumber]["desire"]["tour"].AsInt;
                 break;
 
-            case "Convenience":
+            case "convenience":
                 tempType = DesireType.Convenience;
                 tempResolveAmount = structureJson[tempStructureCategory][tempStructureNumber]["desire"]["convenience"].AsInt;
                 break;
 
-            case "Fun":
+            case "fun":
                 tempType = DesireType.Fun;
                 tempResolveAmount = structureJson[tempStructureCategory][tempStructureNumber]["desire"]["fun"].AsInt;
                 break;
 
-            case "Santuary":
+            case "santuary":
                 tempType = DesireType.Health;
                 tempResolveAmount = structureJson[tempStructureCategory][tempStructureNumber]["desire"]["health"].AsInt;
                 break;
 
-            case "Rescue":
+            case "rescue":
                 tempType = DesireType.Rescue;
                 break;
         }

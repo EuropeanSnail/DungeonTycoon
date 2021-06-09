@@ -1,7 +1,5 @@
 fileFormatVersion: 2
 guid: 5a077485a3ad76c4eb622d4de435c776
-timeCreated: 1467725614
-licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: dragons_0
@@ -79,14 +77,17 @@ TextureImporter:
     21300144: dragons_72
     21300146: dragons_73
     21300148: dragons_74
-  serializedVersion: 2
+  externalObjects: {}
+  serializedVersion: 5
   mipmaps:
     mipMapMode: 0
     enableMipMap: 1
+    sRGBTexture: 1
     linearTexture: 0
-    correctGamma: 0
     fadeOut: 0
     borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -96,36 +97,56 @@ TextureImporter:
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
-  generateCubemap: 0
+  generateCubemap: 6
   cubemapConvolution: 0
-  cubemapConvolutionSteps: 7
-  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
+    serializedVersion: 2
     filterMode: -1
     aniso: 16
     mipBias: -1
-    wrapMode: 1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
-  rGBM: 0
   compressionQuality: 50
-  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
-  buildTargetSettings: []
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
+    serializedVersion: 2
     sprites:
-    - name: dragons_0
+    - serializedVersion: 2
+      name: dragons_0
       rect:
         serializedVersion: 2
         x: 5
@@ -135,15 +156,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 27.5, y: 12}
-        - {x: 20.5, y: 33}
-        - {x: -27.5, y: 33}
-        - {x: -27.5, y: -33}
-        - {x: 7.5, y: -33}
-        - {x: 18.5, y: -31}
-        - {x: 27.5, y: -19}
-    - name: dragons_1
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ef95205937418243b3894169fec4f69
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_1
       rect:
         serializedVersion: 2
         x: 70
@@ -153,14 +176,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -26.5, y: 32.5}
-        - {x: -26.5, y: -32.5}
-        - {x: 21.5, y: -32.5}
-        - {x: 26.5, y: -19.5}
-        - {x: 26.5, y: 22.5}
-        - {x: 9.5, y: 32.5}
-    - name: dragons_2
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7492a7b11c6627a45a90c8fe46e4e6a2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_2
       rect:
         serializedVersion: 2
         x: 135
@@ -170,15 +196,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -25.5, y: 32.5}
-        - {x: -25.5, y: -29.5}
-        - {x: -23.5, y: -32.5}
-        - {x: 19.5, y: -32.5}
-        - {x: 25.5, y: -26.5}
-        - {x: 25.5, y: 16.5}
-        - {x: 17.5, y: 32.5}
-    - name: dragons_3
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 619c02ac940d83c448818e8718c2ae0d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_3
       rect:
         serializedVersion: 2
         x: 197
@@ -188,14 +216,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -27.5, y: 34}
-        - {x: -27.5, y: -34}
-        - {x: 13.5, y: -34}
-        - {x: 27.5, y: -22}
-        - {x: 27.5, y: 21}
-        - {x: 20.5, y: 34}
-    - name: dragons_4
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e1d61bd26a02e94c905561fe3cac260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_4
       rect:
         serializedVersion: 2
         x: 6
@@ -205,17 +236,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 15.5, y: 32.5}
-        - {x: 13.5, y: 33.5}
-        - {x: -26.5, y: 33.5}
-        - {x: -26.5, y: -32.5}
-        - {x: -23.5, y: -33.5}
-        - {x: 15.5, y: -33.5}
-        - {x: 26.5, y: -15.5}
-        - {x: 26.5, y: 11.5}
-        - {x: 24.5, y: 18.5}
-    - name: dragons_5
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea9dfec743688ed409518ce357cbd092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_5
       rect:
         serializedVersion: 2
         x: 70
@@ -225,14 +256,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 26, y: -16}
-        - {x: 26, y: 20}
-        - {x: 10, y: 32}
-        - {x: -26, y: 32}
-        - {x: -26, y: -32}
-        - {x: 21, y: -32}
-    - name: dragons_6
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68c0613872253a14f9fac01190236aa0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_6
       rect:
         serializedVersion: 2
         x: 133
@@ -242,15 +276,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -27.5, y: 33}
-        - {x: -27.5, y: -25}
-        - {x: -24.5, y: -33}
-        - {x: 17.5, y: -33}
-        - {x: 27.5, y: -19}
-        - {x: 27.5, y: 11}
-        - {x: 19.5, y: 33}
-    - name: dragons_7
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 932431d957fc9514fb70bd9e87234bbb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_7
       rect:
         serializedVersion: 2
         x: 200
@@ -260,16 +296,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 3.5, y: 33.5}
-        - {x: -24.5, y: 33.5}
-        - {x: -25.5, y: 31.5}
-        - {x: -25.5, y: -33.5}
-        - {x: 20.5, y: -33.5}
-        - {x: 25.5, y: -17.5}
-        - {x: 25.5, y: 17.5}
-        - {x: 13.5, y: 31.5}
-    - name: dragons_8
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce37245b77e0eca49b5cc634f4d5cd94
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_8
       rect:
         serializedVersion: 2
         x: 7
@@ -279,15 +316,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -17.5, y: 37}
-        - {x: -27.5, y: 20}
-        - {x: -27.5, y: -37}
-        - {x: 14.5, y: -37}
-        - {x: 27.5, y: -23}
-        - {x: 27.5, y: 9}
-        - {x: 10.5, y: 37}
-    - name: dragons_9
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a084489e0b5400e4eb3aff05a801f9c2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_9
       rect:
         serializedVersion: 2
         x: 71
@@ -297,15 +336,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 11, y: 37}
-        - {x: -28, y: 37}
-        - {x: -28, y: -37}
-        - {x: 18, y: -37}
-        - {x: 28, y: -24}
-        - {x: 28, y: 2}
-        - {x: 20, y: 25}
-    - name: dragons_10
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59a700769011a924aa5a444387598553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_10
       rect:
         serializedVersion: 2
         x: 129
@@ -315,13 +356,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -29.5, y: 32}
-        - {x: -29.5, y: -32}
-        - {x: 17.5, y: -32}
-        - {x: 29.5, y: 0}
-        - {x: 29.5, y: 32}
-    - name: dragons_11
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d27fe17434b1ca4ba35da39ec913902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_11
       rect:
         serializedVersion: 2
         x: 193
@@ -331,18 +376,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 29.5, y: -44.5}
-        - {x: 32.5, y: -44.5}
-        - {x: 32.5, y: -20.5}
-        - {x: 29.5, y: -21.5}
-      - - {x: -25.5, y: 44.5}
-        - {x: -32.5, y: 37.5}
-        - {x: -32.5, y: -21.5}
-        - {x: 20.5, y: -21.5}
-        - {x: 28.5, y: 12.5}
-        - {x: 28.5, y: 44.5}
-    - name: dragons_12
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd7cbddd39244e642b6f70d64e572ed0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_12
       rect:
         serializedVersion: 2
         x: 7
@@ -352,15 +396,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -23, y: 33.5}
-        - {x: -26, y: 21.5}
-        - {x: -26, y: -33.5}
-        - {x: 15, y: -33.5}
-        - {x: 26, y: -15.5}
-        - {x: 26, y: 20.5}
-        - {x: 5, y: 33.5}
-    - name: dragons_13
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dc2ac4119a33fe42843c4df11190b8c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_13
       rect:
         serializedVersion: 2
         x: 72
@@ -370,15 +416,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -24, y: 34}
-        - {x: -25, y: 29}
-        - {x: -25, y: -34}
-        - {x: 17, y: -34}
-        - {x: 25, y: -29}
-        - {x: 25, y: 22}
-        - {x: 9, y: 34}
-    - name: dragons_14
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02fa46e059fc35340a32ab09c15e262e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_14
       rect:
         serializedVersion: 2
         x: 136
@@ -388,15 +436,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 5.5, y: 33.5}
-        - {x: -25.5, y: 33.5}
-        - {x: -25.5, y: -33.5}
-        - {x: 23.5, y: -33.5}
-        - {x: 25.5, y: -23.5}
-        - {x: 25.5, y: 16.5}
-        - {x: 14.5, y: 32.5}
-    - name: dragons_15
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 592c0f00d4baefc4c8e03a222f4d863b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_15
       rect:
         serializedVersion: 2
         x: 200
@@ -406,14 +456,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -25.5, y: 33.5}
-        - {x: -25.5, y: -33.5}
-        - {x: 22.5, y: -33.5}
-        - {x: 25.5, y: -24.5}
-        - {x: 25.5, y: 7.5}
-        - {x: 16.5, y: 33.5}
-    - name: dragons_16
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e18820d97fbf72145b118a6fd6c19aa4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_16
       rect:
         serializedVersion: 2
         x: 7
@@ -423,17 +476,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -27.5, y: 8}
-        - {x: -27.5, y: -37}
-        - {x: 14.5, y: -37}
-        - {x: 27.5, y: -23}
-        - {x: 27.5, y: 14}
-        - {x: 21.5, y: 29}
-        - {x: 5.5, y: 37}
-        - {x: -14.5, y: 37}
-        - {x: -21.5, y: 23}
-    - name: dragons_17
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37c38c921eefa494b88e7c6f3c4072f2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_17
       rect:
         serializedVersion: 2
         x: 71
@@ -443,15 +496,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -23, y: 37}
-        - {x: -28, y: 26}
-        - {x: -28, y: -37}
-        - {x: 20, y: -37}
-        - {x: 28, y: -27}
-        - {x: 28, y: 3}
-        - {x: 14, y: 37}
-    - name: dragons_18
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f915f7bb0f5f69a498e0183806a4b2ca
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_18
       rect:
         serializedVersion: 2
         x: 135
@@ -461,15 +516,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -22.5, y: 37}
-        - {x: -27.5, y: 22}
-        - {x: -27.5, y: -37}
-        - {x: 21.5, y: -37}
-        - {x: 27.5, y: -29}
-        - {x: 27.5, y: 10}
-        - {x: 11.5, y: 37}
-    - name: dragons_19
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26be0b3a00053ba40bfa96b8a1eb3a7a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_19
       rect:
         serializedVersion: 2
         x: 197
@@ -479,18 +536,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 4.5, y: 37}
-        - {x: -19.5, y: 37}
-        - {x: -26.5, y: 25}
-        - {x: -26.5, y: -17}
-        - {x: -21.5, y: -34}
-        - {x: -14.5, y: -37}
-        - {x: 16.5, y: -37}
-        - {x: 26.5, y: -19}
-        - {x: 26.5, y: 10}
-        - {x: 14.5, y: 34}
-    - name: dragons_20
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 490a2aff13a718745a09194cce6f275a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_20
       rect:
         serializedVersion: 2
         x: 5
@@ -500,14 +556,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -27.5, y: 33}
-        - {x: -27.5, y: -33}
-        - {x: 16.5, y: -33}
-        - {x: 27.5, y: -22}
-        - {x: 27.5, y: 17}
-        - {x: 19.5, y: 33}
-    - name: dragons_21
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2888d0bfdac04a40b9ccd39b095f05c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_21
       rect:
         serializedVersion: 2
         x: 69
@@ -517,14 +576,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -27.5, y: 33.5}
-        - {x: -27.5, y: -33.5}
-        - {x: 20.5, y: -33.5}
-        - {x: 27.5, y: -13.5}
-        - {x: 27.5, y: 16.5}
-        - {x: 16.5, y: 33.5}
-    - name: dragons_22
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eccc9e0bf0ab9e44e957d6c1aeb71f44
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_22
       rect:
         serializedVersion: 2
         x: 134
@@ -534,15 +596,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -24.5, y: 34}
-        - {x: -26.5, y: 33}
-        - {x: -26.5, y: -34}
-        - {x: 23.5, y: -34}
-        - {x: 26.5, y: -30}
-        - {x: 26.5, y: 23}
-        - {x: 7.5, y: 34}
-    - name: dragons_23
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1df4ff2e8dcd47244aea641689e84da1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_23
       rect:
         serializedVersion: 2
         x: 199
@@ -552,15 +616,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 4.5, y: 34}
-        - {x: -25.5, y: 34}
-        - {x: -25.5, y: -34}
-        - {x: 23.5, y: -34}
-        - {x: 25.5, y: -26}
-        - {x: 25.5, y: 23}
-        - {x: 7.5, y: 33}
-    - name: dragons_24
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f966c18a20d5b54e83febec7f0f960d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_24
       rect:
         serializedVersion: 2
         x: 1
@@ -570,15 +636,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -24.5, y: 33.5}
-        - {x: -25.5, y: 30.5}
-        - {x: -25.5, y: -33.5}
-        - {x: 14.5, y: -33.5}
-        - {x: 25.5, y: -17.5}
-        - {x: 25.5, y: 7.5}
-        - {x: 17.5, y: 33.5}
-    - name: dragons_25
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 890ef3d234d34c247bf9473744ee361d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_25
       rect:
         serializedVersion: 2
         x: 57
@@ -588,18 +656,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 16.5, y: 34}
-        - {x: -16.5, y: 34}
-        - {x: -23.5, y: 21}
-        - {x: -30.5, y: 4}
-        - {x: -30.5, y: -27}
-        - {x: -29.5, y: -34}
-        - {x: 22.5, y: -34}
-        - {x: 30.5, y: -14}
-        - {x: 30.5, y: 3}
-        - {x: 29.5, y: 5}
-    - name: dragons_26
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be30bfa2b18c6884bb57d32e6134e44c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_26
       rect:
         serializedVersion: 2
         x: 121
@@ -609,17 +676,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18.5, y: 34}
-        - {x: -30.5, y: 4}
-        - {x: -30.5, y: -20}
-        - {x: -27.5, y: -32}
-        - {x: -21.5, y: -34}
-        - {x: 16.5, y: -34}
-        - {x: 30.5, y: -10}
-        - {x: 30.5, y: 1}
-        - {x: 15.5, y: 34}
-    - name: dragons_27
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc292c1d9a9fe794f8a25f607a6b383d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_27
       rect:
         serializedVersion: 2
         x: 185
@@ -629,28 +696,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 26.5, y: 12}
-        - {x: 12.5, y: 26}
-        - {x: 9.5, y: 26}
-        - {x: 6.5, y: 24}
-        - {x: 5.5, y: 21}
-        - {x: 7.5, y: 26}
-        - {x: 12.5, y: 29}
-        - {x: 4.5, y: 34}
-        - {x: -22.5, y: 34}
-        - {x: -36.5, y: 27}
-        - {x: -36.5, y: -34}
-        - {x: 10.5, y: -34}
-        - {x: 29.5, y: -11}
-        - {x: 31.5, y: -7}
-        - {x: 31.5, y: 4}
-      - - {x: 33.5, y: 13}
-        - {x: 35.5, y: 11}
-        - {x: 36.5, y: 11}
-        - {x: 36.5, y: 18}
-        - {x: 33.5, y: 17}
-    - name: dragons_28
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 648cb9887bee6084e9a4ea137ff51f19
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_28
       rect:
         serializedVersion: 2
         x: 1
@@ -660,13 +716,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -29.5, y: 32}
-        - {x: -29.5, y: -32}
-        - {x: 17.5, y: -32}
-        - {x: 29.5, y: 0}
-        - {x: 29.5, y: 32}
-    - name: dragons_29
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 664e1ba179f1ddb4a86246be62e0e48f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_29
       rect:
         serializedVersion: 2
         x: 66
@@ -676,17 +736,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 1.5, y: 33}
-        - {x: -30.5, y: 33}
-        - {x: -30.5, y: -14}
-        - {x: -27.5, y: -32}
-        - {x: -23.5, y: -33}
-        - {x: 17.5, y: -33}
-        - {x: 30.5, y: -6}
-        - {x: 30.5, y: 18}
-        - {x: 28.5, y: 25}
-    - name: dragons_30
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b4a8be45fb218f42a02c8211bacb099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_30
       rect:
         serializedVersion: 2
         x: 129
@@ -696,17 +756,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -7, y: 32}
-        - {x: -30, y: 32}
-        - {x: -31, y: 29}
-        - {x: -31, y: -26}
-        - {x: -29, y: -32}
-        - {x: 21, y: -32}
-        - {x: 31, y: -3}
-        - {x: 31, y: 16}
-        - {x: 27, y: 23}
-    - name: dragons_31
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d429756d9edf0f4ca48850b53944c52
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_31
       rect:
         serializedVersion: 2
         x: 197
@@ -716,21 +776,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -30.5, y: 33}
-        - {x: -30.5, y: -25}
-        - {x: -29.5, y: -30}
-        - {x: -25.5, y: -33}
-        - {x: 17.5, y: -33}
-        - {x: 26.5, y: -10}
-        - {x: 26.5, y: 16}
-        - {x: 14.5, y: 33}
-      - - {x: 27.5, y: 10}
-        - {x: 29.5, y: 8}
-        - {x: 30.5, y: 8}
-        - {x: 30.5, y: 15}
-        - {x: 27.5, y: 14}
-    - name: dragons_32
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6f9ba0ff8afd424e808251b729da985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_32
       rect:
         serializedVersion: 2
         x: 7
@@ -740,17 +796,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -32, y: -1}
-        - {x: -32, y: -31}
-        - {x: -13, y: -31}
-        - {x: 32, y: -13}
-        - {x: 32, y: 23}
-        - {x: 29, y: 31}
-        - {x: -1, y: 31}
-        - {x: -5, y: 30}
-        - {x: -31, y: 7}
-    - name: dragons_33
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 792a21d12959ada42ab978ef5f0a9b1f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_33
       rect:
         serializedVersion: 2
         x: 80
@@ -760,14 +816,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -35, y: -28.5}
-        - {x: 13, y: -28.5}
-        - {x: 35, y: -8.5}
-        - {x: 35, y: 28.5}
-        - {x: -8, y: 28.5}
-        - {x: -35, y: 20.5}
-    - name: dragons_34
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 232ad619f446b4043a8acad2c3900111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_34
       rect:
         serializedVersion: 2
         x: 165
@@ -777,16 +836,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -9, y: 40.5}
-        - {x: -33, y: -3.5}
-        - {x: -33, y: -32.5}
-        - {x: -22, y: -40.5}
-        - {x: 23, y: -40.5}
-        - {x: 33, y: 1.5}
-        - {x: 33, y: 34.5}
-        - {x: 28, y: 40.5}
-    - name: dragons_35
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5304adc9c38dd904eb8b3eea5d2d3758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_35
       rect:
         serializedVersion: 2
         x: 23
@@ -796,15 +856,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -10, y: 17}
-        - {x: -19, y: 12}
-        - {x: -24, y: 2}
-        - {x: -24, y: -12}
-        - {x: -18, y: -17}
-        - {x: 24, y: -17}
-        - {x: 24, y: 17}
-    - name: dragons_36
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebb8cd39e3e7a9f49b5e3e02462a622d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_36
       rect:
         serializedVersion: 2
         x: 104
@@ -814,15 +876,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -6, y: 16}
-        - {x: -23, y: 6}
-        - {x: -23, y: -5}
-        - {x: -15, y: -16}
-        - {x: 23, y: -16}
-        - {x: 23, y: 5}
-        - {x: 18, y: 16}
-    - name: dragons_37
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cb56472701b8894497db46ae2a88f8e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_37
       rect:
         serializedVersion: 2
         x: 1
@@ -832,17 +896,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -23, y: 34}
-        - {x: -35, y: 4}
-        - {x: -35, y: -20}
-        - {x: -32, y: -32}
-        - {x: -26, y: -34}
-        - {x: 19, y: -34}
-        - {x: 35, y: -12}
-        - {x: 35, y: 13}
-        - {x: 17, y: 34}
-    - name: dragons_38
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfb324bc75f0ee5458d5d3912cc5e899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_38
       rect:
         serializedVersion: 2
         x: 75
@@ -852,25 +916,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 10, y: 29.5}
-        - {x: 3, y: 24.5}
-        - {x: 2, y: 20.5}
-        - {x: 2, y: 11.5}
-        - {x: 2, y: 14.5}
-        - {x: 1, y: 17.5}
-        - {x: -4, y: 21.5}
-        - {x: -2, y: 26.5}
-        - {x: -2, y: 29.5}
-        - {x: -24, y: 29.5}
-        - {x: -32, y: 21.5}
-        - {x: -32, y: -8.5}
-        - {x: -25, y: -29.5}
-        - {x: 16, y: -29.5}
-        - {x: 32, y: -9.5}
-        - {x: 32, y: 14.5}
-        - {x: 11, y: 29.5}
-    - name: dragons_39
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 304526f89579ca34f9ad083e341724ee
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_39
       rect:
         serializedVersion: 2
         x: 152
@@ -880,29 +936,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -4, y: -2}
-        - {x: -8, y: -7}
-        - {x: -2, y: 0}
-        - {x: 0, y: 0}
-        - {x: 14, y: -1}
-        - {x: 16, y: 1}
-        - {x: 16, y: 14}
-        - {x: -1, y: 29}
-        - {x: -47, y: 29}
-        - {x: -53, y: 27}
-        - {x: -53, y: -18}
-        - {x: -50, y: -29}
-        - {x: -2, y: -29}
-        - {x: 9, y: -2}
-        - {x: 2, y: -1}
-        - {x: -1, y: -1}
-      - - {x: 50, y: -9}
-        - {x: 52, y: -11}
-        - {x: 53, y: -11}
-        - {x: 53, y: -5}
-        - {x: 50, y: -6}
-    - name: dragons_40
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22a3a0122fe6d524292f1b32d73e5d08
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_40
       rect:
         serializedVersion: 2
         x: 3
@@ -912,25 +956,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 10, y: 30}
-        - {x: 3, y: 25}
-        - {x: 2, y: 21}
-        - {x: 2, y: 12}
-        - {x: 2, y: 15}
-        - {x: 1, y: 18}
-        - {x: -4, y: 22}
-        - {x: -2, y: 27}
-        - {x: -2, y: 30}
-        - {x: -24, y: 30}
-        - {x: -32, y: 21}
-        - {x: -32, y: -11}
-        - {x: -28, y: -30}
-        - {x: 22, y: -30}
-        - {x: 32, y: -11}
-        - {x: 32, y: 15}
-        - {x: 11, y: 30}
-    - name: dragons_41
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81cd80c97946ba8469c03ae5b044cc68
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_41
       rect:
         serializedVersion: 2
         x: 76
@@ -940,23 +976,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 5, y: 29.5}
-        - {x: 3, y: 22.5}
-        - {x: 3, y: 12.5}
-        - {x: 3, y: 14.5}
-        - {x: 1, y: 29.5}
-        - {x: -18, y: 29.5}
-        - {x: -26, y: 26.5}
-        - {x: -31, y: 22.5}
-        - {x: -31, y: -19.5}
-        - {x: -30, y: -27.5}
-        - {x: -29, y: -29.5}
-        - {x: 25, y: -29.5}
-        - {x: 31, y: -18.5}
-        - {x: 31, y: 17.5}
-        - {x: 9, y: 29.5}
-    - name: dragons_42
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fc547811807f7a498f4f434a18d21b4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_42
       rect:
         serializedVersion: 2
         x: 152
@@ -966,26 +996,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 18.5, y: 0}
-        - {x: 15.5, y: -1}
-        - {x: 11.5, y: -6}
-        - {x: 17.5, y: 1}
-        - {x: 19.5, y: 1}
-        - {x: 33.5, y: 0}
-        - {x: 33.5, y: 14}
-        - {x: 26.5, y: 20}
-        - {x: 8.5, y: 28}
-        - {x: -0.5, y: 28}
-        - {x: -1.5, y: 27}
-        - {x: -1.5, y: 28}
-        - {x: -33.5, y: 28}
-        - {x: -33.5, y: -23}
-        - {x: -26.5, y: -28}
-        - {x: 17.5, y: -28}
-        - {x: 28.5, y: -1}
-        - {x: 21.5, y: 0}
-    - name: dragons_43
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f201faa957ff0e44ba68a13df028c31
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_43
       rect:
         serializedVersion: 2
         x: 6
@@ -995,16 +1016,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -26, y: 29.5}
-        - {x: -29, y: 24.5}
-        - {x: -29, y: -11.5}
-        - {x: -27, y: -29.5}
-        - {x: 17, y: -29.5}
-        - {x: 29, y: -15.5}
-        - {x: 29, y: 20.5}
-        - {x: 9, y: 29.5}
-    - name: dragons_44
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 804da5cf30aa9ea46a0f5d1ba70fa423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_44
       rect:
         serializedVersion: 2
         x: 75
@@ -1014,34 +1036,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 11, y: -9.5}
-        - {x: 16, y: -3.5}
-        - {x: 19, y: -3.5}
-        - {x: 25, y: -2.5}
-        - {x: 29, y: -5.5}
-        - {x: 32, y: -5.5}
-        - {x: 32, y: 10.5}
-        - {x: 11, y: 30.5}
-        - {x: 10, y: 30.5}
-        - {x: 3, y: 25.5}
-        - {x: 2, y: 21.5}
-        - {x: 2, y: 12.5}
-        - {x: 2, y: 15.5}
-        - {x: 1, y: 18.5}
-        - {x: -4, y: 22.5}
-        - {x: -2, y: 27.5}
-        - {x: -2, y: 30.5}
-        - {x: -24, y: 30.5}
-        - {x: -32, y: 21.5}
-        - {x: -32, y: 2.5}
-        - {x: -28, y: -27.5}
-        - {x: -25, y: -30.5}
-        - {x: 17, y: -30.5}
-        - {x: 27, y: -8.5}
-        - {x: 21, y: -3.5}
-        - {x: 18, y: -3.5}
-    - name: dragons_45
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1444115147141146bc18dd8fafa0dfc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_45
       rect:
         serializedVersion: 2
         x: 151
@@ -1051,22 +1056,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 16, y: -2}
-        - {x: 12, y: -7}
-        - {x: 18, y: 0}
-        - {x: 20, y: 0}
-        - {x: 34, y: -1}
-        - {x: 34, y: 14}
-        - {x: 31, y: 25}
-        - {x: 11, y: 29}
-        - {x: -34, y: 29}
-        - {x: -34, y: -29}
-        - {x: 19, y: -29}
-        - {x: 30, y: -2}
-        - {x: 22, y: -1}
-        - {x: 19, y: -1}
-    - name: dragons_46
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ee21e2e35ba53d4eb170fa3ad970228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_46
       rect:
         serializedVersion: 2
         x: 151
@@ -1076,15 +1076,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -34, y: 29}
-        - {x: -34, y: -7}
-        - {x: -27, y: -29}
-        - {x: 25, y: -29}
-        - {x: 34, y: -11}
-        - {x: 34, y: 27}
-        - {x: 26, y: 29}
-    - name: dragons_47
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6db937604614b2e488555b06c1e8a3aa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_47
       rect:
         serializedVersion: 2
         x: 6
@@ -1094,21 +1096,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 9, y: 29.5}
-        - {x: 5, y: 25.5}
-        - {x: 4, y: 22.5}
-        - {x: 4, y: 8.5}
-        - {x: 4, y: 15.5}
-        - {x: 3, y: 18.5}
-        - {x: 5, y: 29.5}
-        - {x: -29, y: 29.5}
-        - {x: -29, y: -29.5}
-        - {x: 17, y: -29.5}
-        - {x: 29, y: -17.5}
-        - {x: 29, y: 5.5}
-        - {x: 14, y: 29.5}
-    - name: dragons_48
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ef6d43a171717a45846b31f029df27b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_48
       rect:
         serializedVersion: 2
         x: 73
@@ -1118,16 +1116,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -16.5, y: 30}
-        - {x: -30.5, y: 15}
-        - {x: -30.5, y: -25}
-        - {x: -26.5, y: -30}
-        - {x: 18.5, y: -30}
-        - {x: 30.5, y: -23}
-        - {x: 30.5, y: 16}
-        - {x: 27.5, y: 30}
-    - name: dragons_49
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46a98b6885d42294ca69396fca8252f2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_49
       rect:
         serializedVersion: 2
         x: 137
@@ -1137,21 +1136,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 19, y: -9}
-        - {x: 21, y: -5}
-        - {x: 31, y: -11}
-        - {x: 33, y: -11}
-        - {x: 33, y: 30}
-        - {x: -31, y: 30}
-        - {x: -33, y: 26}
-        - {x: -33, y: -24}
-        - {x: -27, y: -30}
-        - {x: 19, y: -30}
-        - {x: 31, y: -16}
-        - {x: 30, y: -12}
-        - {x: 27, y: -9}
-    - name: dragons_50
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cdab7cf6e02f174e8c8df763fa02da0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_50
       rect:
         serializedVersion: 2
         x: 6
@@ -1161,23 +1156,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 9, y: 29.5}
-        - {x: 5, y: 25.5}
-        - {x: 4, y: 22.5}
-        - {x: 4, y: 8.5}
-        - {x: 4, y: 15.5}
-        - {x: 3, y: 18.5}
-        - {x: 5, y: 29.5}
-        - {x: -26, y: 29.5}
-        - {x: -29, y: 23.5}
-        - {x: -29, y: -19.5}
-        - {x: -26, y: -29.5}
-        - {x: 21, y: -29.5}
-        - {x: 29, y: -12.5}
-        - {x: 29, y: 10.5}
-        - {x: 14, y: 29.5}
-    - name: dragons_51
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68d5e8630960cea488c949ba45ad995f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_51
       rect:
         serializedVersion: 2
         x: 73
@@ -1187,16 +1176,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -20.5, y: 30}
-        - {x: -30.5, y: 16}
-        - {x: -30.5, y: -21}
-        - {x: -24.5, y: -30}
-        - {x: 21.5, y: -30}
-        - {x: 30.5, y: -21}
-        - {x: 30.5, y: 12}
-        - {x: 28.5, y: 30}
-    - name: dragons_52
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 523b7b99c2fdb7c469de38fb677586fb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_52
       rect:
         serializedVersion: 2
         x: 137
@@ -1206,16 +1196,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18.5, y: 30}
-        - {x: -30.5, y: 14}
-        - {x: -30.5, y: -22}
-        - {x: -25.5, y: -30}
-        - {x: 19.5, y: -30}
-        - {x: 30.5, y: -24}
-        - {x: 30.5, y: 11}
-        - {x: 25.5, y: 30}
-    - name: dragons_53
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78332b5daef55b044992f15cf2bb52bb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_53
       rect:
         serializedVersion: 2
         x: 4
@@ -1225,14 +1216,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -22, y: 37.5}
-        - {x: -29, y: 29.5}
-        - {x: -29, y: -37.5}
-        - {x: 29, y: -37.5}
-        - {x: 29, y: 26.5}
-        - {x: 18, y: 37.5}
-    - name: dragons_54
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1b60ba613c4ee34fb6b89920a128c8c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_54
       rect:
         serializedVersion: 2
         x: 67
@@ -1242,17 +1236,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 22, y: 36.5}
-        - {x: -18, y: 36.5}
-        - {x: -30, y: 8.5}
-        - {x: -30, y: -34.5}
-        - {x: -29, y: -36.5}
-        - {x: 17, y: -36.5}
-        - {x: 30, y: -31.5}
-        - {x: 30, y: 5.5}
-        - {x: 23, y: 35.5}
-    - name: dragons_55
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e4f9d461a3c7144bb05448f92d5d436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_55
       rect:
         serializedVersion: 2
         x: 132
@@ -1262,17 +1256,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -23, y: 37.5}
-        - {x: -29, y: 22.5}
-        - {x: -29, y: -14.5}
-        - {x: -26, y: -15.5}
-        - {x: -24, y: -37.5}
-        - {x: 26, y: -37.5}
-        - {x: 29, y: -28.5}
-        - {x: 29, y: 16.5}
-        - {x: 15, y: 37.5}
-    - name: dragons_56
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8625a9e8f07ca6488412e840559fc40
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_56
       rect:
         serializedVersion: 2
         x: 195
@@ -1282,16 +1276,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -6, y: 36.5}
-        - {x: -14, y: 32.5}
-        - {x: -30, y: 16.5}
-        - {x: -30, y: -36.5}
-        - {x: 18, y: -36.5}
-        - {x: 30, y: -32.5}
-        - {x: 30, y: 5.5}
-        - {x: 22, y: 36.5}
-    - name: dragons_57
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daab8f076a0684240ad4bc51adf3bbec
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_57
       rect:
         serializedVersion: 2
         x: 3
@@ -1301,25 +1296,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 10, y: 29.5}
-        - {x: 6, y: 26.5}
-        - {x: 3, y: 23.5}
-        - {x: 2, y: 20.5}
-        - {x: 2, y: 11.5}
-        - {x: 2, y: 14.5}
-        - {x: 1, y: 17.5}
-        - {x: -4, y: 21.5}
-        - {x: -2, y: 26.5}
-        - {x: -2, y: 29.5}
-        - {x: -25, y: 29.5}
-        - {x: -32, y: 23.5}
-        - {x: -32, y: -29.5}
-        - {x: 16, y: -29.5}
-        - {x: 24, y: -23.5}
-        - {x: 32, y: -7.5}
-        - {x: 32, y: 11.5}
-    - name: dragons_58
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc3add136a9f6c44589d96c8a4d24e7f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_58
       rect:
         serializedVersion: 2
         x: 76
@@ -1329,23 +1316,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 10, y: 28}
-        - {x: 7, y: 28}
-        - {x: 4, y: 25}
-        - {x: 3, y: 22}
-        - {x: 3, y: 12}
-        - {x: 3, y: 14}
-        - {x: 1, y: 29}
-        - {x: -18, y: 29}
-        - {x: -26, y: 26}
-        - {x: -31, y: 20}
-        - {x: -31, y: -29}
-        - {x: 22, y: -29}
-        - {x: 31, y: -19}
-        - {x: 31, y: 5}
-        - {x: 27, y: 11}
-    - name: dragons_59
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84335bfad6af57c46826c00c2be4748e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_59
       rect:
         serializedVersion: 2
         x: 149
@@ -1355,17 +1336,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 21.5, y: 29.5}
-        - {x: -29.5, y: 29.5}
-        - {x: -29.5, y: -17.5}
-        - {x: -27.5, y: -29.5}
-        - {x: 9.5, y: -29.5}
-        - {x: 16.5, y: -28.5}
-        - {x: 29.5, y: -13.5}
-        - {x: 29.5, y: 9.5}
-        - {x: 28.5, y: 13.5}
-    - name: dragons_60
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d85d508b454be648adbf54a44683ecc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_60
       rect:
         serializedVersion: 2
         x: 3
@@ -1375,34 +1356,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 18, y: -4}
-        - {x: 15, y: -5}
-        - {x: 11, y: -9}
-        - {x: 6, y: -7}
-        - {x: 25, y: -2}
-        - {x: 29, y: -5}
-        - {x: 32, y: -5}
-        - {x: 32, y: 11}
-        - {x: 11, y: 31}
-        - {x: 10, y: 31}
-        - {x: 3, y: 26}
-        - {x: 2, y: 22}
-        - {x: 2, y: 13}
-        - {x: 2, y: 16}
-        - {x: 1, y: 19}
-        - {x: -4, y: 23}
-        - {x: -2, y: 28}
-        - {x: -2, y: 31}
-        - {x: -24, y: 31}
-        - {x: -32, y: 24}
-        - {x: -32, y: -12}
-        - {x: -26, y: -31}
-        - {x: 17, y: -31}
-        - {x: 32, y: -17}
-        - {x: 32, y: -8}
-        - {x: 21, y: -4}
-    - name: dragons_61
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2c5f5dbc123bbc46bbeb8bcd7a33aa5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_61
       rect:
         serializedVersion: 2
         x: 76
@@ -1412,22 +1376,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 5, y: 29.5}
-        - {x: 3, y: 22.5}
-        - {x: 3, y: 12.5}
-        - {x: 3, y: 14.5}
-        - {x: 1, y: 29.5}
-        - {x: -18, y: 29.5}
-        - {x: -26, y: 26.5}
-        - {x: -31, y: 22.5}
-        - {x: -31, y: -18.5}
-        - {x: -29, y: -29.5}
-        - {x: 18, y: -29.5}
-        - {x: 31, y: -14.5}
-        - {x: 31, y: 16.5}
-        - {x: 9, y: 29.5}
-    - name: dragons_62
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36d9594c622015840911be3b37a73531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_62
       rect:
         serializedVersion: 2
         x: 149
@@ -1437,14 +1396,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -29.5, y: 28.5}
-        - {x: -29.5, y: -28.5}
-        - {x: 22.5, y: -28.5}
-        - {x: 29.5, y: -21.5}
-        - {x: 29.5, y: 10.5}
-        - {x: 14.5, y: 28.5}
-    - name: dragons_63
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ca56b838bf092844a41defe4e0f2b31
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_63
       rect:
         serializedVersion: 2
         x: 4
@@ -1454,18 +1416,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 9, y: 37.5}
-        - {x: -13, y: 37.5}
-        - {x: -24, y: 24.5}
-        - {x: -29, y: 3.5}
-        - {x: -29, y: -26.5}
-        - {x: -25, y: -37.5}
-        - {x: 26, y: -37.5}
-        - {x: 29, y: -29.5}
-        - {x: 29, y: 17.5}
-        - {x: 25, y: 23.5}
-    - name: dragons_64
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d379ffeb55e08f641bb4962cb2fb062f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_64
       rect:
         serializedVersion: 2
         x: 66
@@ -1475,16 +1436,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -15.5, y: 34}
-        - {x: -33.5, y: 14}
-        - {x: -33.5, y: -25}
-        - {x: -15.5, y: -34}
-        - {x: 12.5, y: -34}
-        - {x: 31.5, y: -23}
-        - {x: 33.5, y: -19}
-        - {x: 33.5, y: 34}
-    - name: dragons_65
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b63e5a374cf69d4596f9d67fd8040a3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_65
       rect:
         serializedVersion: 2
         x: 138
@@ -1494,15 +1456,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -13.5, y: 38.5}
-        - {x: -33.5, y: 15.5}
-        - {x: -33.5, y: -30.5}
-        - {x: -28.5, y: -38.5}
-        - {x: 15.5, y: -38.5}
-        - {x: 33.5, y: -11.5}
-        - {x: 33.5, y: 38.5}
-    - name: dragons_66
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 625b2343026c3c5428f24028bdb5fa50
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_66
       rect:
         serializedVersion: 2
         x: 3
@@ -1512,25 +1476,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 10, y: 30}
-        - {x: 3, y: 25}
-        - {x: 2, y: 21}
-        - {x: 2, y: 12}
-        - {x: 2, y: 15}
-        - {x: 1, y: 18}
-        - {x: -4, y: 22}
-        - {x: -2, y: 27}
-        - {x: -2, y: 30}
-        - {x: -24, y: 30}
-        - {x: -32, y: 21}
-        - {x: -32, y: -11}
-        - {x: -28, y: -30}
-        - {x: 22, y: -30}
-        - {x: 32, y: -11}
-        - {x: 32, y: 15}
-        - {x: 11, y: 30}
-    - name: dragons_67
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d1b790f971604940b859fb5e79fda93
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_67
       rect:
         serializedVersion: 2
         x: 76
@@ -1540,20 +1496,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 5, y: 29.5}
-        - {x: 3, y: 22.5}
-        - {x: 3, y: 12.5}
-        - {x: 3, y: 14.5}
-        - {x: 1, y: 29.5}
-        - {x: -29, y: 29.5}
-        - {x: -31, y: 23.5}
-        - {x: -31, y: -16.5}
-        - {x: -29, y: -29.5}
-        - {x: 31, y: -29.5}
-        - {x: 31, y: 23.5}
-        - {x: 12, y: 29.5}
-    - name: dragons_68
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0bc8cb8adbc2194a89163ba0f993572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_68
       rect:
         serializedVersion: 2
         x: 150
@@ -1563,22 +1516,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 8, y: 29}
-        - {x: 5, y: 26}
-        - {x: 5, y: 24}
-        - {x: 4, y: 23}
-        - {x: 5, y: 26}
-        - {x: 5, y: 29}
-        - {x: -23, y: 29}
-        - {x: -29, y: 26}
-        - {x: -29, y: -13}
-        - {x: -26, y: -29}
-        - {x: 21, y: -29}
-        - {x: 29, y: -12}
-        - {x: 29, y: 11}
-        - {x: 15, y: 29}
-    - name: dragons_69
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dc1ab6b197e660448a2d8ba3c955c87
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_69
       rect:
         serializedVersion: 2
         x: 6
@@ -1588,21 +1536,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 9, y: 29.5}
-        - {x: 5, y: 25.5}
-        - {x: 4, y: 22.5}
-        - {x: 4, y: 8.5}
-        - {x: 4, y: 15.5}
-        - {x: 3, y: 18.5}
-        - {x: 5, y: 29.5}
-        - {x: -29, y: 29.5}
-        - {x: -29, y: -29.5}
-        - {x: 17, y: -29.5}
-        - {x: 29, y: -17.5}
-        - {x: 29, y: 5.5}
-        - {x: 14, y: 29.5}
-    - name: dragons_70
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 974a57d5a358316498cd282632a93a73
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_70
       rect:
         serializedVersion: 2
         x: 75
@@ -1612,16 +1556,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -26.5, y: 30.5}
-        - {x: -30.5, y: 16.5}
-        - {x: -30.5, y: -23.5}
-        - {x: -25.5, y: -30.5}
-        - {x: 22.5, y: -30.5}
-        - {x: 30.5, y: -13.5}
-        - {x: 30.5, y: 10.5}
-        - {x: 16.5, y: 30.5}
-    - name: dragons_71
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 768fe3f1cb8428e438b1fc7c39754bc1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_71
       rect:
         serializedVersion: 2
         x: 144
@@ -1631,27 +1576,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 15.5, y: -3}
-        - {x: 11.5, y: -8}
-        - {x: 17.5, y: -1}
-        - {x: 19.5, y: -1}
-        - {x: 25.5, y: 0}
-        - {x: 33.5, y: -2}
-        - {x: 33.5, y: 13}
-        - {x: 29.5, y: 23}
-        - {x: 0.5, y: 30}
-        - {x: -1.5, y: 25}
-        - {x: -1.5, y: 30}
-        - {x: -28.5, y: 30}
-        - {x: -33.5, y: 29}
-        - {x: -33.5, y: -26}
-        - {x: -32.5, y: -30}
-        - {x: 20.5, y: -30}
-        - {x: 29.5, y: -8}
-        - {x: 22.5, y: -1}
-        - {x: 18.5, y: -2}
-    - name: dragons_72
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48d3c47d249fd3d40a0ba405f558a47e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_72
       rect:
         serializedVersion: 2
         x: 3
@@ -1661,33 +1596,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 11, y: -9.5}
-        - {x: 16, y: -3.5}
-        - {x: 19, y: -3.5}
-        - {x: 25, y: -2.5}
-        - {x: 29, y: -5.5}
-        - {x: 32, y: -5.5}
-        - {x: 32, y: 10.5}
-        - {x: 11, y: 30.5}
-        - {x: 10, y: 30.5}
-        - {x: 3, y: 25.5}
-        - {x: 2, y: 21.5}
-        - {x: 2, y: 12.5}
-        - {x: 2, y: 15.5}
-        - {x: 1, y: 18.5}
-        - {x: -4, y: 22.5}
-        - {x: -2, y: 27.5}
-        - {x: -2, y: 30.5}
-        - {x: -24, y: 30.5}
-        - {x: -32, y: 21.5}
-        - {x: -32, y: -8.5}
-        - {x: -27, y: -30.5}
-        - {x: 17, y: -30.5}
-        - {x: 27, y: -8.5}
-        - {x: 21, y: -3.5}
-        - {x: 18, y: -3.5}
-    - name: dragons_73
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6c95585d5af31f4489d84edb682b6a6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_73
       rect:
         serializedVersion: 2
         x: 73
@@ -1697,16 +1616,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -30, y: 35}
-        - {x: -30, y: -22}
-        - {x: -19, y: -35}
-        - {x: 4, y: -35}
-        - {x: 10, y: -34}
-        - {x: 30, y: -18}
-        - {x: 30, y: 17}
-        - {x: 20, y: 35}
-    - name: dragons_74
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78b56b015675b6c4e9fb18f32410da22
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragons_74
       rect:
         serializedVersion: 2
         x: 143
@@ -1716,14 +1636,23 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -10, y: 36}
-        - {x: -33, y: -9}
-        - {x: -33, y: -36}
-        - {x: 33, y: -36}
-        - {x: 33, y: 25}
-        - {x: 28, y: 36}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 803dcc4d9b200f14690532f1503206ca
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 7e4df5c1f90c7e140a41f60bb2bf48a6
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
   spritePackingTag: 
   userData: 
   assetBundleName: 

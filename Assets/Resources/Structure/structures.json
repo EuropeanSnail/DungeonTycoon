@@ -1,5 +1,5 @@
 ﻿{
-  Drink : [ 
+  drink : [ 
             {
               name : "생수노점",
               type : "Drink",
