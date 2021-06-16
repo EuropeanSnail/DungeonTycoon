@@ -8,10 +8,9 @@
       "sceneend" : "Dialogs/Stage/Stage1_Victory.json",
       "conquerstart" : {},
       "conquerend" : {},
-	  "test" : "",
       "buildstructure" : "Dialogs/Stage/Tutorial_BuildStructure.json",
-      "itemequip" : "Dialogs/Stage/Tutorial_ItemEquip.json",
-      "selectspadv" : "Dialogs/Stage/Tutorial_SelectSpAdv.json"
+      "equipitem" : "Dialogs/Stage/Tutorial_EquipItem.json",
+      "opentrain" : "Dialogs/Stage/Tutorial_OpenTrain.json"
     },
     {
       "scenestart" : "Dialogs/Stage/Stage2_Start.json",
@@ -28,10 +27,7 @@
         "conquerend" : 
         {
           "2" : "Dialogs/Stage/Tutorial_BossPhase.json"            
-        },
-        "buildstructure" : "Dialogs/Stage/Tutorial_BuildStructure.json",
-        "itemequip" : "Dialogs/Stage/Tutorial_ItemEquip.json",
-        "selectspadv" : "Dialogs/Stage/Tutorial_SelectSpAdv.json"
+        }
       },
       {
         "introdue" : "",
@@ -58,9 +54,9 @@
   "hana" :
     [
       {
+		"introdue" : "Dialogs/Hana/0.json"
       },
       {
-        "introdue" : "Dialogs/Hana/0.json",
         "conquerstart" : 
         {
           "3" : "Dialogs/Hana/1_1.json"  
@@ -89,9 +85,9 @@
   "iris" :
     [
       {
+		"introdue" : "Dialogs/Iris/0.json"
       },
       {
-        "introdue" : "Dialogs/Iris/0.json",
         "conquerstart" : {},
         "conquerend" : {"5" : "Dialogs/Iris/1.json"}
       },
@@ -114,9 +110,9 @@
   "maxi" :
     [
       {
+		"introdue" : "Dialogs/Maxi/0.json"
       },
       {
-        "introdue" : "Dialogs/Maxi/0.json",
         "conquerstart" : {},
         "conquerend" : {"5" : "Dialogs/Maxi/1.json"}
       },
@@ -139,9 +135,9 @@
   "murat" :
     [
       {
+		"introdue" : "Dialogs/Murat/0.json"
       },
       {
-        "introdue" : "Dialogs/Murat/0.json",
         "conquerstart" : {},
         "conquerend" : {"5" : "Dialogs/Murat/1.json"}
       },
@@ -163,9 +159,9 @@
   "nyang" :
     [
       {
+		"introdue" : "Dialogs/Nyang/0.json"
       },
       {
-        "introdue" : "Dialogs/Nyang/0.json",
         "conquerstart" : {},
         "conquerend" : {"5" : "Dialogs/Nyang/1.json"}
       },
@@ -187,9 +183,9 @@
   "wal" :
     [
       {
+		"introdue" : "Dialogs/Wal/0.json"
       },
       {
-        "introdue" : "Dialogs/Wal/0.json",
         "conquerstart" : {},
         "conquerend" : {"5" : "Dialogs/Wal/1.json"}
       },
@@ -211,9 +207,9 @@
   "yeonhwa" :
     [
       {
+		"introdue" : "Dialogs/Yeonhwa/0.json"
       },
       {
-        "introdue" : "Dialogs/Yeonhwa/0.json",
         "conquerstart" : {"3" : "Dialogs/Yeonhwa/1_1.json"},
         "conquerend" : {"5" : "Dialogs/Yeonhwa/1_2.json"}
       },

@@ -19,7 +19,6 @@ public class SpAdvSelectionUI : MonoBehaviour
             GameManager.Instance.ChooseSpAdv(curSelected);
             trainPanel.OpenSpAdvPanel();
             trainPanel.RefreshEquipButton();
-			
         }
     }
 

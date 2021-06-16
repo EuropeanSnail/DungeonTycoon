@@ -19,6 +19,7 @@ public class GameSavedata
     // 아이템 보유 및 장착 현황
     public Dictionary<string, Dictionary<int, ItemCondition>> itemStorage;
 	public Dictionary<string, int> characterDialogProgressData;
+	public Dictionary<string, int> extDialogProgressData;
 
 	// 카메라 설정
 	public Vector3Data cameraPosition;
@@ -68,7 +69,7 @@ public class GameSavedata
         playerPopularity = gameManager.playerPopularity;
         playerSpAdvIndex = gameManager.playerSpAdvIndex;
 		characterDialogProgressData = ProgressManager.Instance.characterDialogProgressData;
-
+		extDialogProgressData = ProgressManager.Instance.extDialogProgressData;
         itemStorage = gameManager.GetItemStorage();
 
         cameraPosition = new Vector3Data(Camera.main.transform.position);

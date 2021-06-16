@@ -7,6 +7,10 @@ public enum SpAdvNames
 {
 	Hana, Iris, Maxi, Murat, OldMan, Yeonhwa, Nyang, Wal
 }
+public enum ExtNames
+{
+	Build, Equip, Train
+}
 public class ProgressManager : MonoBehaviour {
 
 
@@ -19,6 +23,7 @@ public class ProgressManager : MonoBehaviour {
 	
 	JSONNode dialogBindingJson;
 	public Dictionary<string, int> characterDialogProgressData;
+	public Dictionary<string, int> extDialogProgressData;
 	public static ProgressManager Instance
 	{
 		get
@@ -51,9 +56,14 @@ public class ProgressManager : MonoBehaviour {
 		if (SaveLoadManager.Instance.isLoadedGame == false)
 		{
 			characterDialogProgressData = new Dictionary<string, int>();
+			extDialogProgressData = new Dictionary<string, int>();
 			for (int i = 0; i < System.Enum.GetNames(typeof(SpAdvNames)).Length; i++)
 			{
-				characterDialogProgressData.Add(System.Enum.GetName(typeof(SpAdvNames), i), 1);
+				characterDialogProgressData.Add(System.Enum.GetName(typeof(SpAdvNames), i), 0);
+			}
+			for(int i = 0; i< System.Enum.GetNames(typeof(ExtNames)).Length; i++)
+			{
+				extDialogProgressData.Add(System.Enum.GetName(typeof(ExtNames), i), 0);
 			}
 		}
 	}
@@ -64,11 +74,12 @@ public class ProgressManager : MonoBehaviour {
 	}
 	//DialogBinding
 	//dialogBindingJson["stage"][int]는 스테이지 번호 = 인덱스
+
 	//dialogBindingJson[캐릭터이름][int]는 캐릭터 별 진행상황(PlayerPrefs에 저장) = 인덱스
 
 	#region Check
 	//Stage
-	public void SceneStarted(int sceneNum)
+	public void SceneStarted(int sceneNum) //GameManager에서 LateStarted로 isloaded == false 일때만 // progressData 신경 안써도됨
 	{
 		if (dialogBindingJson["stage"][sceneNum]["scenestart"] != null)
 			DialogManager.Instance.StartDialog(dialogBindingJson["stage"][sceneNum]["scenestart"]);
@@ -78,8 +89,16 @@ public class ProgressManager : MonoBehaviour {
 		if (dialogBindingJson["stage"][sceneNum]["sceneend"] != null)
 			DialogManager.Instance.StartDialog(dialogBindingJson["stage"][sceneNum]["sceneend"]);
 		characterDialogProgressData[GetCurSpAdvName()]++;
+		if(string.Equals(GetCurSpAdvName(), System.Enum.GetName(typeof(SpAdvNames), 6)))// 6 == nyang
+		{
+			characterDialogProgressData[System.Enum.GetName(typeof(SpAdvNames), 7)]++;
+		}
+		else if (string.Equals(GetCurSpAdvName(), System.Enum.GetName(typeof(SpAdvNames), 7)))// 7 == wal
+		{
+			characterDialogProgressData[System.Enum.GetName(typeof(SpAdvNames), 6)]++;
+		}
 	}
-	public void ConquerStarted(int areaNum)
+	public void ConquerStarted(int areaNum) // 로드 시 이미 conquer 된것으로 나오기때문에 -- 다시 나오진 않을듯?
 	{
 		if(dialogBindingJson[GetCurSpAdvName()][characterDialogProgressData[GetCurSpAdvName()]]["conquerstart"][areaNum.ToString()] != null)
 			DialogManager.Instance.StartDialog(dialogBindingJson[GetCurSpAdvName()][characterDialogProgressData[GetCurSpAdvName()]]["conquerstart"][areaNum.ToString()]);
@@ -94,14 +113,27 @@ public class ProgressManager : MonoBehaviour {
 	public void BuildStructure(int sceneNum)
 	{
 		//sceneNum 1일때만 한번 실행
+		if (extDialogProgressData["Build"] <= 0)
+		{
+			DialogManager.Instance.StartDialog(dialogBindingJson["stage"][1]["buildstructure"]));
+		}
 	}
 	public void EquipItem(int sceneNum)
 	{
 		//sceneNum 1일때만 한번 실행
 	}
+	public void OpenTrainMenu()
+	{
+		//육성 버튼 눌렀을때 설명(할배)
+
+	}
 	public void SelectSpAdv(int charNum)
 	{
 		//캐릭터 ProgressIndex == 0 일때 딱 한번만 실행.
+		if(characterDialogProgressData[GetCurSpAdvName()] == 0)
+		{
+			DialogManager.Instance.StartDialog(dialogBindingJson[GetCurSpAdvName()][])
+		}
 	}
 	#endregion
 	public string GetCurSpAdvName()
@@ -111,5 +143,9 @@ public class ProgressManager : MonoBehaviour {
 	public void LoadCharacterDialogProgressData(GameSavedata save)
 	{
 		characterDialogProgressData = save.characterDialogProgressData;
+	}
+	public void LoadExtDialogProgressData(GameSavedata save)
+	{
+		extDialogProgressData = save.extDialogProgressData;
 	}
 }

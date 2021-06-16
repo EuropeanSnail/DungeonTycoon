@@ -130,6 +130,7 @@ public class SaveLoadManager : MonoBehaviour
             GameManager.Instance.LoadUI(savedata);
             GameManager.Instance.CreateStatDummies();
 			ProgressManager.Instance.LoadCharacterDialogProgressData(savedata);
+			ProgressManager.Instance.LoadExtDialogProgressData(savedata);
             //Debug.Log("불러오기 성공");
 
             savedata = null;
