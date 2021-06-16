@@ -16,7 +16,7 @@ enum Category
 };
 enum Genre
 {
-	accomodation,
+	accommodation,
 	alcohol,
 	armor,
 	celebrate,
@@ -36,9 +36,9 @@ enum Genre
 }
 
 public class BuildPanel : UIObject {
-	private string upText = "▲";
-	private string downText = "▼";
-	private string middleText = "〓";
+	private string upText = "<color=#93FF00>▲</color>";
+	private string downText = "<color=#FFB923>▼</color>";
+	private string middleText = "<color=#323232>〓</color>";
 
 	public GameObject drinkPanel;
     public GameObject foodPanel;
@@ -79,7 +79,7 @@ public class BuildPanel : UIObject {
 		//load genre icon
 		for(int i = 0; i<System.Enum.GetNames(typeof(Genre)).Length; i++)
 		{
-			genreImages.Add(System.Enum.GetName(typeof(Genre), i), Resources.Load<Sprite>("GenreIcon/" + System.Enum.GetName(typeof(Genre), i));
+			genreImages.Add(System.Enum.GetName(typeof(Genre), i), Resources.Load<Sprite>("GenreIcon/" + System.Enum.GetName(typeof(Genre), i)));
 		}
 		if (isInstantiated == true)
 			yield break;
@@ -105,12 +105,34 @@ public class BuildPanel : UIObject {
 				for(int j = 0; j<structuresMaxInfo[System.Enum.GetName(typeof(Category), i)].AsInt; j++)
 				{
 					//j_max 만큼 생성
+					
 					tempStructureJSON = structuresInfo[System.Enum.GetName(typeof(Category), i)][j];
 					entity = Instantiate(structureUIEntityOrigin, categoryScrolls[i].transform).GetComponent<StructureUIEntity>();
 					entity.structureName.text = tempStructureJSON["name"];
 					entity.genreImage.sprite = genreImages[tempStructureJSON["genre"]];
-					entiry.
-					//entity.structureAreaImage.SetNativeSize();
+					entity.structureGenre.text = tempStructureJSON["genreDisplay"];
+					//entity.structureImage .....
+					entity.structureAreaImage.sprite = Resources.Load<Sprite>("StructureAreaImage/" + System.Enum.GetName(typeof(Category), i) + "/" + j);
+					entity.structureAreaImage.SetNativeSize();
+					entity.structureCharge.text = tempStructureJSON["charge"];
+					entity.structureCapacity.text = tempStructureJSON["capacity"];
+					entity.structureDuration.text = tempStructureJSON["duration"];
+
+					entity.prefAdventurer.text = GetPreferenceVariance(tempStructureJSON["preference"]["adventurer"].AsInt);
+					entity.prefTraveler.text = GetPreferenceVariance(tempStructureJSON["preference"]["tourist"].AsInt);
+					entity.prefLower.text = GetPreferenceVariance(tempStructureJSON["preference"]["lowerclass"].AsInt);
+					entity.prefMiddle.text = GetPreferenceVariance(tempStructureJSON["preference"]["middleclass"].AsInt);
+					entity.prefUpper.text = GetPreferenceVariance(tempStructureJSON["preference"]["upperclass"].AsInt);
+					entity.prefHuman.text = GetPreferenceVariance(tempStructureJSON["preference"]["human"].AsInt);
+					entity.prefElf.text = GetPreferenceVariance(tempStructureJSON["preference"]["elf"].AsInt);
+					entity.prefDwarf.text = GetPreferenceVariance(tempStructureJSON["preference"]["dwarf"].AsInt);
+					entity.prefOrc.text = GetPreferenceVariance(tempStructureJSON["preference"]["orc"].AsInt);
+					entity.prefDog.text = GetPreferenceVariance(tempStructureJSON["preference"]["dog"].AsInt);
+					entity.prefCat.text = GetPreferenceVariance(tempStructureJSON["preference"]["cat"].AsInt);
+
+					entity.structureExplanation.text = tempStructureJSON["explanation"];
+					entity.structureConstructCharge.text = tempStructureJSON["expenses"];
+
 				}
 			}
 			isInstantiated = true;
@@ -139,11 +161,11 @@ public class BuildPanel : UIObject {
     }
     public void OpenPanel(GameObject panel)
     {
-        SetInitialPosition(FindChildScroll(currentShowingPanel));
+        //SetInitialPosition(FindChildScroll(currentShowingPanel));
         currentShowingPanel.SetActive(false);
 
         currentShowingPanel = panel;
-        SetInitialPosition(FindChildScroll(currentShowingPanel));
+        //SetInitialPosition(FindChildScroll(currentShowingPanel));
         currentShowingPanel.SetActive(true);
     }
 
@@ -168,11 +190,12 @@ public class BuildPanel : UIObject {
 	
 	public string GetPreferenceVariance(int pref)
 	{
-		if (pref < 40)
+		if (pref < 35)
 			return downText;
-		else if (pref >= 40 && pref < 60)
+		else if (pref >= 35 && pref <= 50)
 			return middleText;
 		else
 			return upText;
 	}
+	
 }
