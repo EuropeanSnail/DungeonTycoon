@@ -68,10 +68,10 @@ public class TrainPanel : UIObject {
     {
         GameObject spAdvPanel;
 
-        if (GameManager.Instance.playerSpAdvIndex != -1)
-            spAdvPanel = myAdvInfoPanel;
-        else
-            spAdvPanel = myAdvSelectionPanel;
+		if (GameManager.Instance.playerSpAdvIndex != -1)
+			spAdvPanel = myAdvInfoPanel;
+		else
+			spAdvPanel = myAdvSelectionPanel;
 
         spAdvPanel.SetActive(true);
         itemEquipPanel.SetActive(false);
@@ -80,11 +80,13 @@ public class TrainPanel : UIObject {
         otherSpAdvInfoPanel.SetActive(false);
         spAdvPreviewPanel.SetActive(false);
 
-    RefreshEquipButton();
+		RefreshEquipButton();
         
         base.Show();
         currentShowingPanel = spAdvPanel;
-    }
+		//Dialog
+		ProgressManager.Instance.OpenTrainMenu();
+	}
 
     public override void Hide()
     {
@@ -106,10 +108,10 @@ public class TrainPanel : UIObject {
     {
         GameObject spAdvPanel;
 
-        if (GameManager.Instance.playerSpAdvIndex != -1)
-            spAdvPanel = myAdvInfoPanel;
-        else
-            spAdvPanel = myAdvSelectionPanel;
+		if (GameManager.Instance.playerSpAdvIndex != -1)
+			spAdvPanel = myAdvInfoPanel;
+		else
+			spAdvPanel = myAdvSelectionPanel;
 
         currentShowingPanel.SetActive(false);
         currentShowingPanel = spAdvPanel;
