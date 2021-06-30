@@ -130,7 +130,11 @@ public class ProgressManager : MonoBehaviour {
 	public void EquipItem()
 	{
 		//sceneNum 1일때만 한번 실행
+<<<<<<< HEAD
+		if(extDialogProgressData["Equip"] <= 0)
+=======
 		if (extDialogProgressData["Equip"] <= 0)
+>>>>>>> b557e739c8ea9b8e49d66056ed7752a046141316
 		{
 			DialogManager.Instance.StartDialog(dialogBindingJson["stage"][1]["equipitem"]);
 			extDialogProgressData["Equip"]++;
@@ -138,18 +142,31 @@ public class ProgressManager : MonoBehaviour {
 	}
 	public void OpenTrainMenu()
 	{
+<<<<<<< HEAD
+		//육성 버튼 눌렀을때 설명(할배)
+=======
 		//육성 버튼 눌렀을때 설명
+>>>>>>> b557e739c8ea9b8e49d66056ed7752a046141316
 		if (extDialogProgressData["Train"] <= 0)
 		{
 			DialogManager.Instance.StartDialog(dialogBindingJson["stage"][1]["opentrain"]);
 			extDialogProgressData["Train"]++;
 		}
+<<<<<<< HEAD
+
+=======
+>>>>>>> b557e739c8ea9b8e49d66056ed7752a046141316
 	}
 	public void SelectSpAdv(int charNum)
 	{
 		//캐릭터 ProgressIndex == 0 일때 딱 한번만 실행.
+		if(characterDialogProgressData[System.Enum.GetName(typeof(SpAdvNames), charNum)] == 0)
 		{
+<<<<<<< HEAD
 			DialogManager.Instance.StartDialog(dialogBindingJson[System.Enum.GetName(typeof(SpAdvNames), charNum)][0]["introduce"]);
+=======
+			DialogManager.Instance.StartDialog(dialogBindingJson[GetCurSpAdvName()][0]["introduce"]);
+>>>>>>> b557e739c8ea9b8e49d66056ed7752a046141316
 			characterDialogProgressData[System.Enum.GetName(typeof(SpAdvNames), charNum)]++;
 		}
 	}
