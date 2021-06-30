@@ -104,6 +104,7 @@ public class ProgressManager : MonoBehaviour {
 			return;
 		if(dialogBindingJson[GetCurSpAdvName()][characterDialogProgressData[GetCurSpAdvName()]]["conquerstart"][areaNum.ToString()] != null)
 			DialogManager.Instance.StartDialog(dialogBindingJson[GetCurSpAdvName()][characterDialogProgressData[GetCurSpAdvName()]]["conquerstart"][areaNum.ToString()]);
+		Debug.Log("ConquerStarted() Called - " + areaNum);
 	}
 	public void ConquerEnded(int areaNum)
 	{
@@ -111,6 +112,7 @@ public class ProgressManager : MonoBehaviour {
 			return;
 		if (dialogBindingJson[GetCurSpAdvName()][characterDialogProgressData[GetCurSpAdvName()]]["conquerend"][areaNum.ToString()] != null)
 			DialogManager.Instance.StartDialog(dialogBindingJson[GetCurSpAdvName()][characterDialogProgressData[GetCurSpAdvName()]]["conquerend"][areaNum.ToString()]);
+		Debug.Log("ConquerEndted() Called - " + areaNum);
 	}
 	public void CheckCharacterSelected()
 	{
@@ -123,6 +125,7 @@ public class ProgressManager : MonoBehaviour {
 		//sceneNum 1일때만 한번 실행
 		if (extDialogProgressData["Build"] <= 0)
 		{
+			
 			DialogManager.Instance.StartDialog(dialogBindingJson["stage"][1]["buildstructure"]);
 			extDialogProgressData["Build"]++;
 		}

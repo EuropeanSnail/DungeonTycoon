@@ -191,6 +191,7 @@ public class DialogManager : MonoBehaviour
 	}
 	public void StartDialog(string path)
 	{
+		Debug.Log("StartDialog() Called - " + path);
 		LoadDialogs(path);
 		DoPlay();
 	}

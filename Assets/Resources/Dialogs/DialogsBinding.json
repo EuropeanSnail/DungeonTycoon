@@ -5,10 +5,10 @@
     {
       "introdue" : "",
       "scenestart" : "Dialogs/Stage/Stage1_Start",
-      "sceneend" : "Dialogs/Stage/Stage1_Victory.json",
+      "sceneend" : "Dialogs/Stage/Stage1_Victory",
       "conquerstart" : {},
       "conquerend" : {},
-      "buildstructure" : "Dialogs/Stage/Tutorial_BuildStructure.json",
+      "buildstructure" : "Dialogs/Stage/Tutorial_BuildStructure",
       "equipitem" : "Dialogs/Stage/Tutorial_EquipItem.json",
       "opentrain" : "Dialogs/Stage/Tutorial_OpenTrain.json"
     },

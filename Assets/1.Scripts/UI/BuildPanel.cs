@@ -162,6 +162,7 @@ public class BuildPanel : UIObject {
         OpenPanel(drinkPanel);
 
 		//Dialog 출력
+		Debug.Log("BuildPanel Open - ");
 		ProgressManager.Instance.BuildStructure();
     }
     public override void Hide()
