@@ -133,6 +133,13 @@ public class BuildPanel : UIObject {
 					entity.structureExplanation.text = tempStructureJSON["explanation"];
 					entity.structureConstructCharge.text = tempStructureJSON["expenses"];
 
+					int tempCatLoop = i;
+					int tempNumLoop = j;
+					entity.constructButton.onClick.AddListener(delegate { StructureManager.Instance.setStructureCategory(System.Enum.GetName(typeof(Category), tempCatLoop)); });
+					entity.constructButton.onClick.AddListener(delegate { StructureManager.Instance.setStructureNumber(tempNumLoop); });
+					entity.constructButton.onClick.AddListener(delegate { StructureManager.Instance.InstantiateStructure(); });
+					entity.constructButton.onClick.AddListener(delegate { UIManager.Instance.HideUI(); });
+					Debug.Log("Holy Fuck");
 				}
 			}
 			isInstantiated = true;

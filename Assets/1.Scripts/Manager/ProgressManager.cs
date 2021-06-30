@@ -115,24 +115,36 @@ public class ProgressManager : MonoBehaviour {
 		//sceneNum 1일때만 한번 실행
 		if (extDialogProgressData["Build"] <= 0)
 		{
-			DialogManager.Instance.StartDialog(dialogBindingJson["stage"][1]["buildstructure"]));
+			DialogManager.Instance.StartDialog(dialogBindingJson["stage"][1]["buildstructure"]);
+			extDialogProgressData["Build"]++;
 		}
 	}
 	public void EquipItem(int sceneNum)
 	{
 		//sceneNum 1일때만 한번 실행
+		if(extDialogProgressData["Equip"] <= 0)
+		{
+			DialogManager.Instance.StartDialog(dialogBindingJson["stage"][1]["equipitem"]);
+			extDialogProgressData["Equip"]++;
+		}
 	}
 	public void OpenTrainMenu()
 	{
 		//육성 버튼 눌렀을때 설명(할배)
+		if (extDialogProgressData["Train"] <= 0)
+		{
+			DialogManager.Instance.StartDialog(dialogBindingJson["stage"][1]["opentrain"]);
+			extDialogProgressData["Train"]++;
+		}
 
 	}
 	public void SelectSpAdv(int charNum)
 	{
 		//캐릭터 ProgressIndex == 0 일때 딱 한번만 실행.
-		if(characterDialogProgressData[GetCurSpAdvName()] == 0)
+		if(characterDialogProgressData[System.Enum.GetName(typeof(SpAdvNames), charNum)] == 0)
 		{
-			DialogManager.Instance.StartDialog(dialogBindingJson[GetCurSpAdvName()][])
+			DialogManager.Instance.StartDialog(dialogBindingJson[System.Enum.GetName(typeof(SpAdvNames), charNum)][0]["introduce"]);
+			characterDialogProgressData[System.Enum.GetName(typeof(SpAdvNames), charNum)]++;
 		}
 	}
 	#endregion

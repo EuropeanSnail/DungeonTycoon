@@ -33,6 +33,7 @@ public class StructureUIEntity : MonoBehaviour {
 	public Image structureConstructImage;
 
 	public BuildPanel buildPanel;
+	public Button constructButton;
 	private WaitForSeconds refreshInterval = new WaitForSeconds(3.0f);
 	private Coroutine autoRefresh;
 	
@@ -64,4 +65,5 @@ public class StructureUIEntity : MonoBehaviour {
 		}
 
 	}
+	
 }
