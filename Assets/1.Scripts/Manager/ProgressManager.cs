@@ -147,6 +147,7 @@ public class ProgressManager : MonoBehaviour {
 			DialogManager.Instance.StartDialog(dialogBindingJson["stage"][1]["opentrain"]);
 			extDialogProgressData["Train"]++;
 		}
+		Debug.Log("OpenTrain....");
 	}
 	public void SelectSpAdv(int charNum)
 	{

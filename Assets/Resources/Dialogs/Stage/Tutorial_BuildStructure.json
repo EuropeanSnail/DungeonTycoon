@@ -1,6 +1,7 @@
 [
   {
-    "backgrounds": [],
+    "backgrounds": [
+    ],
     "bigIllustrations": [],
     "effects": [],
     "fullText": "가게를 새로 내도록 하세.　",
@@ -29,7 +30,7 @@
       {
         "Key": 0,
         "Value": [
-          "할"
+          "할배"
         ]
       }
     ],
@@ -85,6 +86,8 @@
     "textType": 2
   },
   {
+    "backgrounds": [],
+    "bigIllustrations": [],
     "effects": [],
     "fullText": "후원한 일선 모험가가 던전 보스를 공략해내면\r\n후원사는 막대한 홍보효과를 얻는다네.\r\n　",
     "illustrationsL": [],
