@@ -523,7 +523,6 @@ public class StructureManager : MonoBehaviour
 		//욕구 타입과 대기 시간 고려
 		//순서는 종족, 부, 직업 고려
 		//거리?
-		
 	}
 
     public Structure[] FindRescue(Traveler t) // 수정필요할듯?

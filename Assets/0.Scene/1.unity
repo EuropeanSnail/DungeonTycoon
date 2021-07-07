@@ -6765,8 +6765,8 @@ Camera:
   m_GameObject: {fileID: 199607491}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.9103774, g: 0.96913457, b: 1, a: 1}
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 1}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -6868,7 +6868,7 @@ Skybox:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 199607491}
   m_Enabled: 1
-  m_CustomSkybox: {fileID: 2100000, guid: 88ec9a13802800449aaf825aff3aadc7, type: 2}
+  m_CustomSkybox: {fileID: 2100000, guid: ee9ec2739f9623b44934e790e857eaaf, type: 2}
 --- !u!1 &202060891
 GameObject:
   m_ObjectHideFlags: 0
@@ -7619,8 +7619,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 553, y: -900}
-  m_SizeDelta: {x: 800, y: 830}
+  m_AnchoredPosition: {x: 553, y: -750}
+  m_SizeDelta: {x: 800, y: 1132}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &213558530
 MonoBehaviour:
@@ -7755,8 +7755,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -569, y: -900}
-  m_SizeDelta: {x: 800, y: 830}
+  m_AnchoredPosition: {x: -569, y: -750}
+  m_SizeDelta: {x: 800, y: 1132}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &220168112
 MonoBehaviour:
@@ -10303,8 +10303,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 611, y: 83}
-  m_SizeDelta: {x: 110, y: 60}
+  m_AnchoredPosition: {x: 805, y: 790}
+  m_SizeDelta: {x: 220, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &266902287
 MonoBehaviour:
