@@ -66,6 +66,7 @@ public class ItemEquipUI : MonoBehaviour
         CreateItemStorage();
 
         InitSlotIcons();
+		ProgressManager.Instance.EquipItem();
     }
 
     private void Update()

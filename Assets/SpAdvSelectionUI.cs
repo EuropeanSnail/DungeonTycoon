@@ -40,6 +40,7 @@ public class SpAdvSelectionUI : MonoBehaviour
             spAdvPreviewUI.SelectSpAdv(curSelected);
             determineBtn.interactable = true;
             moreInfoBtn.interactable = true;
+			ProgressManager.Instance.SelectSpAdv(curSelected);
         }
     }
 }

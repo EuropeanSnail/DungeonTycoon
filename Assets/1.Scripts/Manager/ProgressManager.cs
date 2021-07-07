@@ -102,16 +102,16 @@ public class ProgressManager : MonoBehaviour {
 	{
 		if (GetCurSpAdvName() == string.Empty)
 			return;
-		if(dialogBindingJson[GetCurSpAdvName()][characterDialogProgressData[GetCurSpAdvName()]]["conquerstart"][areaNum.ToString()] != null)
-			DialogManager.Instance.StartDialog(dialogBindingJson[GetCurSpAdvName()][characterDialogProgressData[GetCurSpAdvName()]]["conquerstart"][areaNum.ToString()]);
+		if(dialogBindingJson[GetCurSpAdvName().ToLower()][characterDialogProgressData[GetCurSpAdvName()]]["conquerstart"][areaNum.ToString()] != null)
+			DialogManager.Instance.StartDialog(dialogBindingJson[GetCurSpAdvName().ToLower()][characterDialogProgressData[GetCurSpAdvName()]]["conquerstart"][areaNum.ToString()]);
 		Debug.Log("ConquerStarted() Called - " + areaNum);
 	}
 	public void ConquerEnded(int areaNum)
 	{
 		if (GetCurSpAdvName() == string.Empty)
 			return;
-		if (dialogBindingJson[GetCurSpAdvName()][characterDialogProgressData[GetCurSpAdvName()]]["conquerend"][areaNum.ToString()] != null)
-			DialogManager.Instance.StartDialog(dialogBindingJson[GetCurSpAdvName()][characterDialogProgressData[GetCurSpAdvName()]]["conquerend"][areaNum.ToString()]);
+		if (dialogBindingJson[GetCurSpAdvName().ToLower()][characterDialogProgressData[GetCurSpAdvName()]]["conquerend"][areaNum.ToString()] != null)
+			DialogManager.Instance.StartDialog(dialogBindingJson[GetCurSpAdvName().ToLower()][characterDialogProgressData[GetCurSpAdvName()]]["conquerend"][areaNum.ToString()]);
 		Debug.Log("ConquerEndted() Called - " + areaNum);
 	}
 	public void CheckCharacterSelected()
@@ -151,10 +151,26 @@ public class ProgressManager : MonoBehaviour {
 	}
 	public void SelectSpAdv(int charNum)
 	{
+		if (charNum < 0)
+			return;
 		//캐릭터 ProgressIndex == 0 일때 딱 한번만 실행.
+		if(characterDialogProgressData[System.Enum.GetName(typeof(SpAdvNames), charNum)] <= 0)
 		{
-			DialogManager.Instance.StartDialog(dialogBindingJson[System.Enum.GetName(typeof(SpAdvNames), charNum)][0]["introduce"]);
-			characterDialogProgressData[System.Enum.GetName(typeof(SpAdvNames), charNum)]++;
+			Debug.Log("SelectSpAdv - charNum = " + charNum + ", bindingJsonFirst[] =  " + System.Enum.GetName(typeof(SpAdvNames), charNum) + " ToLower - " + System.Enum.GetName(typeof(SpAdvNames), charNum).ToLower());
+			DialogManager.Instance.StartDialog(dialogBindingJson[System.Enum.GetName(typeof(SpAdvNames), charNum).ToLower()][0]["introduce"]);
+			if (charNum == 6)// 6 == nyang
+			{
+				characterDialogProgressData[System.Enum.GetName(typeof(SpAdvNames), 7)]++;
+			}
+			else if (charNum == 7)// 7 == wal
+			{
+				characterDialogProgressData[System.Enum.GetName(typeof(SpAdvNames), 6)]++;
+			}
+			else
+			{
+				characterDialogProgressData[System.Enum.GetName(typeof(SpAdvNames), charNum)]++;
+			}
+
 		}
 	}
 	#endregion

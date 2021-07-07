@@ -3,7 +3,7 @@
   [
 	{},
     {
-      "introdue" : "",
+      "introduce" : "",
       "scenestart" : "Dialogs/Stage/Stage1_Start",
       "sceneend" : "Dialogs/Stage/Stage1_Victory",
       "conquerstart" : {},
@@ -30,21 +30,21 @@
         }
       },
       {
-        "introdue" : "",
+        "introduce" : "",
         "scenestart" : "",
         "sceneend" : "",
         "conquerstart" : {},
         "conquerend" : {}
       },
       {
-        "introdue" : "",
+        "introduce" : "",
         "scenestart" : "",
         "sceneend" : "",
         "conquerstart" : {},
         "conquerend" : {}
       },
       {
-        "introdue" : "",
+        "introduce" : "",
         "scenestart" : "",
         "sceneend" : "",
         "conquerstart" : {},
@@ -54,7 +54,7 @@
   "hana" :
     [
       {
-		"introdue" : "Dialogs/Hana/0"
+		"introduce" : "Dialogs/Hana/0"
       },
       {
         "conquerstart" : 
@@ -67,7 +67,7 @@
         }
       },
       {
-        "introdue" : "",
+        "introduce" : "",
         "conquerstart" : 
         {
           "6" : "Dialogs/Hana/2"
@@ -75,7 +75,7 @@
         "conquerend" : {}
       },
       {
-        "introdue" : "",
+        "introduce" : "",
         "scenestart" : "",
         "sceneend" : "",
         "conquerstart" : {},
@@ -85,14 +85,14 @@
   "iris" :
     [
       {
-		"introdue" : "Dialogs/Iris/0"
+		"introduce" : "Dialogs/Iris/0"
       },
       {
         "conquerstart" : {},
         "conquerend" : {"5" : "Dialogs/Iris/1"}
       },
       {
-        "introdue" : "",
+        "introduce" : "",
         "conquerstart" : {
           "3" : "Dialogs/Iris/2_1",
           "6" : "Dialogs/Iris/2_1"                
@@ -100,7 +100,7 @@
         "conquerend" : {}
       },
       {
-        "introdue" : "",
+        "introduce" : "",
         "scenestart" : "",
         "sceneend" : "",
         "conquerstart" : {},
@@ -110,14 +110,14 @@
   "maxi" :
     [
       {
-		"introdue" : "Dialogs/Maxi/0"
+		"introduce" : "Dialogs/Maxi/0"
       },
       {
         "conquerstart" : {},
         "conquerend" : {"5" : "Dialogs/Maxi/1"}
       },
       {
-        "introdue" : "",
+        "introduce" : "",
         "conquerstart" : {
           "3" : "Dialogs/Maxi/2_1",
           "6" : "Dialogs/Maxi/2_2"
@@ -125,7 +125,7 @@
         "conquerend" : {}
       },
       {
-        "introdue" : "",
+        "introduce" : "",
         "scenestart" : "",
         "sceneend" : "",
         "conquerstart" : {},
@@ -135,21 +135,21 @@
   "murat" :
     [
       {
-		"introdue" : "Dialogs/Murat/0"
+		"introduce" : "Dialogs/Murat/0"
       },
       {
         "conquerstart" : {},
         "conquerend" : {"5" : "Dialogs/Murat/1"}
       },
       {
-        "introdue" : "",
+        "introduce" : "",
         "conquerstart" : {
           "6" : "Dialogs/Murat/2"
         },
         "conquerend" : {}
       },
       {
-        "introdue" : "",
+        "introduce" : "",
         "scenestart" : "",
         "sceneend" : "",
         "conquerstart" : {},
@@ -159,21 +159,21 @@
   "nyang" :
     [
       {
-		"introdue" : "Dialogs/Nyang/0"
+		"introduce" : "Dialogs/Nyang/0"
       },
       {
         "conquerstart" : {},
         "conquerend" : {"5" : "Dialogs/Nyang/1"}
       },
       {
-        "introdue" : "",
+        "introduce" : "",
         "conquerstart" : {
           "6" : "Dialogs/Nyang/2"
         },
         "conquerend" : {}
       },
       {
-        "introdue" : "",
+        "introduce" : "",
         "scenestart" : "",
         "sceneend" : "",
         "conquerstart" : {},
@@ -183,21 +183,21 @@
   "wal" :
     [
       {
-		"introdue" : "Dialogs/Wal/0"
+		"introduce" : "Dialogs/Wal/0"
       },
       {
         "conquerstart" : {},
         "conquerend" : {"5" : "Dialogs/Wal/1"}
       },
       {
-        "introdue" : "",
+        "introduce" : "",
         "conquerstart" : {
           "6" : "Dialogs/Wal/2"
         },
         "conquerend" : {}
       },
       {
-        "introdue" : "",
+        "introduce" : "",
         "scenestart" : "",
         "sceneend" : "",
         "conquerstart" : {},
@@ -207,14 +207,14 @@
   "yeonhwa" :
     [
       {
-		"introdue" : "Dialogs/Yeonhwa/0"
+		"introduce" : "Dialogs/Yeonhwa/0"
       },
       {
         "conquerstart" : {"3" : "Dialogs/Yeonhwa/1_1"},
         "conquerend" : {"5" : "Dialogs/Yeonhwa/1_2"}
       },
       {
-        "introdue" : "",
+        "introduce" : "",
         "conquerstart" : {
           "3" : "Dialogs/Yeonhwa/2_1",
           "6" : "Dialogs/Yeonhwa/2_2"
@@ -224,7 +224,7 @@
         }
       },
       {
-        "introdue" : "",
+        "introduce" : "",
         "scenestart" : "",
         "sceneend" : "",
         "conquerstart" : {},
