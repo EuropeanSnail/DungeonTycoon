@@ -391,6 +391,11 @@ public class DialogManager : MonoBehaviour
 
 		dialogPanel.SetActive(false);
 		Time.timeScale = timeScaleOrigin;
+		if (GameManager.Instance.GetSceneEnded())
+		{
+			yield return new WaitForSeconds(2.0f);
+			GameManager.Instance.LoadNextScene();
+		}
 	}
 
 	IEnumerator _Wait()

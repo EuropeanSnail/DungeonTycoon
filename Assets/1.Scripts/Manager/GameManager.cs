@@ -65,7 +65,7 @@ public class GameManager : MonoBehaviour
             return playerSpAdvIndex != -1;
         }
     }
-
+	bool isSceneEnded = false;
     public JSONNode items;
     #endregion
 
@@ -2258,21 +2258,26 @@ public class GameManager : MonoBehaviour
 
     private void PlayerWon()
     {
+		isSceneEnded = true;
+		Time.timeScale = 1.0f;
         ShowStageClearUI();
-		ProgressManager.Instance.SceneEnded(GetSceneIndex()); // 씬 완료 Dialog 호출
-															  //timescale = 0 말고
-															  //승리 UI 출력 후 다음씬으로 이동?
-		if (int.Parse(SceneManager.GetActiveScene().name) < SceneManager.sceneCount)
-		{
-			SceneManager.LoadScene(int.Parse(SceneManager.GetActiveScene().name) + 1);
-		}
-		else;
-		{
-			//End of Game
-			
-		}
+		ProgressManager.Instance.SceneEnded(GetSceneIndex());
+		
     }
-
+	public void LoadNextScene()
+	{
+		int currentScene = int.Parse(SceneManager.GetActiveScene().name);
+		Debug.Log("Current Scene Number = " + currentScene);
+		if (currentScene < sceneData["scenecount"].AsInt)
+		{
+			//다음 씬 있음.
+			SceneManager.LoadScene((currentScene + 1).ToString());
+		}
+		else
+		{
+			//다음 씬 없음.
+		}
+	}
     private void PlayerLose()
     {
         ShowStageRetryUI();
@@ -2293,26 +2298,7 @@ public class GameManager : MonoBehaviour
 
 
 #region UI
-    //public void ShowBossRaidDecisionUI()
-    //{
-
-    //}
-
-    //public void EnableBossRaidUI()
-    //{
-
-    //}
-
-    //public void DisableBossRaidUI()
-    //{
-
-    //}
-
-    //public void ShowSpAdvSelectionUI()
-    //{
-
-    //}
-
+    
     public void ShowMidBossClearUI()
     {
         Debug.Log("Player got MidBoss.");
@@ -2504,5 +2490,9 @@ public class GameManager : MonoBehaviour
 		{
 			return sceneData["scene"][int.Parse(SceneManager.GetActiveScene().name)]["specialadventurers"][playerSpAdvIndex];
 		}
+	}
+	public bool GetSceneEnded()
+	{
+		return isSceneEnded;
 	}
 }
