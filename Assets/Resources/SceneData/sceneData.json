@@ -137,7 +137,7 @@
         "Nyang",
         "Wal"
       ],
-      "specialadv_level": 20,
+      "specialadv_level": 50,
       "complete_Popularity": 10000,
 	  "start_gold" : 3000,
       "buildable": {
@@ -274,7 +274,7 @@
         "Nyang",
         "Wal"
       ],
-      "specialadv_level": 20,
+      "specialadv_level": 50,
       "complete_Popularity": 10000,
 	  "start_gold" : 3000,
       "buildable": {
@@ -306,56 +306,71 @@
 	  "mapEntranceCount" : 4,
       "mapEntrance": [
         {
-          "x": 0,
-          "y": 46
+          "x": 49,
+          "y": 49
         },
         {
-          "x": 0,
-          "y": 47
+          "x": 49,
+          "y": 48
         },
         {
-          "x": 1,
-          "y": 46
+          "x": 48,
+          "y": 49
         },
         {
-          "x": 1,
-          "y": 47
+          "x": 48,
+          "y": 48
         }
       ],
-	  "huntingAreaCount": 4,
+	  "huntingAreaCount": 6,
       "huntingArea": [
         {
           "huntingAreaNum": 0,
-          "x": 12,
-          "y": 40
+          "x": 34,
+          "y": 31
         },
         {
           "huntingAreaNum": 1,
-          "x": 1,
-          "y": 12
+          "x": 38,
+          "y": 3
         },
         {
           "huntingAreaNum": 2,
-          "x": 27,
-          "y": 17
+          "x": 5,
+          "y": 1
         },
 		{
           "huntingAreaNum": 3,
-          "x": 29,
-          "y": 4
+          "x": 15,
+          "y": 16
+        },
+		{
+          "huntingAreaNum": 4,
+          "x": 14,
+          "y": 42
+        },
+		{
+          "huntingAreaNum": 5,
+          "x": 27,
+          "y": 40
         }
       ],
-      "bossAreaCount": 2,
+      "bossAreaCount": 3,
       "bossArea": [
         {
           "bossAreaNum": 0,
-          "x": 12,
-          "y": 8
+          "x": 29,
+          "y": 1
         },
 		{
           "bossAreaNum": 1,
-          "x": 39,
-          "y": 2
+          "x": 21,
+          "y": 16
+        },
+		{
+          "bossAreaNum": 2,
+          "x": 21,
+          "y": 29
         }
       ],
       "progressInformation": [
