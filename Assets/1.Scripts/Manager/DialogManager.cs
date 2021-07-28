@@ -139,7 +139,7 @@ public class DialogManager : MonoBehaviour
 		preLoadedIllustrations = new List<Sprite>();
 		preLoadedSmallIllustrations = new List<Sprite>();
 		preLoadedBigIllustrations = new List<Sprite>();
-		Sprite[] a = Resources.LoadAll<Sprite>("Illustration/"); //Load All 후 Sort 필요..
+		Sprite[] a = Resources.LoadAll<Sprite>("Illustration/"); 
 		Sprite[] b = Resources.LoadAll<Sprite>("PopupIllustration/Small");
 		Sprite[] c = Resources.LoadAll<Sprite>("PopupIllustration/Big");
 		Sprite[] d = Resources.LoadAll<Sprite>("Backgrounds/");
@@ -159,8 +159,6 @@ public class DialogManager : MonoBehaviour
 		{
 			preLoadedBackgrounds.Add(Resources.Load<Sprite>("Backgrounds/" + i));
 		}
-		//Debug.Log(preLoadedIllustrations.Count + "aaaaa");
-		// 버튼 스프라이트 불러오기 18.06.26 김미수
 	}
 
 	void Update()
@@ -172,6 +170,7 @@ public class DialogManager : MonoBehaviour
 			if (hit.collider != null && hit.collider.gameObject.tag.Equals("guard"))
 			{
 				isTouchDown = true;
+				typeWriteBetween = 0.0f;
 				Debug.Log("hit");
 			}
 			if (hit.collider != null && hit.collider.gameObject.tag.Equals("skipButton"))
@@ -380,15 +379,16 @@ public class DialogManager : MonoBehaviour
 			if (i <= dialogList.Count - 1 && !isSkipDown)
 				yield return waitForTouch = StartCoroutine(_Wait());
 			if (isSkipDown)
+			{
 				yield return skipWait;
-			//bigIllustrationObject.SetActive(false);
-
-
-			//smallIllustrationObject.SetActive(false);
+				break;
+			}
 		}
 		//yield return waitForTouch = StartCoroutine(_Wait());
 		isPlaying = false;
-
+		isTouchDown = false;
+		isSkipDown = false;
+		Clear();
 		dialogPanel.SetActive(false);
 		Time.timeScale = timeScaleOrigin;
 		if (GameManager.Instance.GetSceneEnded())
@@ -397,7 +397,17 @@ public class DialogManager : MonoBehaviour
 			GameManager.Instance.LoadNextScene();
 		}
 	}
-
+	void Clear() //이름(텍스트, bg), 대화내용, 일러스트 좌, 우, big, small 일러스트, 배경, 이펙트 마무리
+	{
+		showingNameBox.text = String.Empty;
+		showingTextBox.text = String.Empty;
+		DoIllustrationChangeL(0);
+		DoIllustrationChangeR(0);
+		HideSmallIllustration();
+		HideBigIllustration();
+		ShowBackground(0);
+		GrayScaleOff();
+	}
 	IEnumerator _Wait()
 	{
 		StartCoroutine(GiveMovementNextButton());

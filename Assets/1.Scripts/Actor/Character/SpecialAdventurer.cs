@@ -546,7 +546,10 @@ public class SpecialAdventurer : Adventurer
         GameManager.Instance.BossRaidCallEventHandler -= OnBossRaidCall;
         GameManager.Instance.PlayerAcceptedRaidEventHandler += OnPlayerRaidOrder;
         GameManager.Instance.PlayerRefusedRaidEventHandler += OnPlayerRaidRefusal;
-    }
+		Debug.Log("BossRaidCallEventHandler - " + GameManager.Instance.BossRaidCallEventHandler.GetInvocationList().Length);
+		
+
+	}
     #endregion
 
     #region BossBattle

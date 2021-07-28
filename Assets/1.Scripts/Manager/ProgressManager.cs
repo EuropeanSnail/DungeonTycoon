@@ -160,11 +160,13 @@ public class ProgressManager : MonoBehaviour {
 			DialogManager.Instance.StartDialog(dialogBindingJson[System.Enum.GetName(typeof(SpAdvNames), charNum).ToLower()][0]["introduce"]);
 			if (charNum == 6)// 6 == nyang
 			{
+				characterDialogProgressData[System.Enum.GetName(typeof(SpAdvNames), 6)]++;
 				characterDialogProgressData[System.Enum.GetName(typeof(SpAdvNames), 7)]++;
 			}
 			else if (charNum == 7)// 7 == wal
 			{
 				characterDialogProgressData[System.Enum.GetName(typeof(SpAdvNames), 6)]++;
+				characterDialogProgressData[System.Enum.GetName(typeof(SpAdvNames), 7)]++;
 			}
 			else
 			{
