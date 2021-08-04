@@ -836,8 +836,10 @@ public class GameManager : MonoBehaviour
                 temp.SetActive(true);
                 activeSpAdvCnt++;
             }
-            yield return new WaitForSeconds(3.0f); // 임시 수치
-        }
+			//yield return new WaitForSeconds(3.0f); // 임시 수치 -> SpAdv 선택 빨리 하면 이벤트 SignExclusiveContract() 에서 이벤트 등록 해제 안됨!
+			yield return null;
+		}
+		
     }
     private void GenAndEnqueueSingleTraveler()
     {
@@ -2036,6 +2038,7 @@ public class GameManager : MonoBehaviour
     {
         playerSpAdvIndex = spAdvIndex;
         specialAdventurers[spAdvIndex].GetComponent<SpecialAdventurer>().SignExclusiveContract();
+		Debug.Log(specialAdventurers[spAdvIndex].GetComponent<SpecialAdventurer>().name + " is Selected!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
         CreateStatDummies();
     }
 

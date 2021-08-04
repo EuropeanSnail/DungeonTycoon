@@ -73,18 +73,8 @@ public class SpecialAdventurer : Adventurer
         //EquipAccessory1(ItemManager.Instance.CreateItem());
         //Debug.Log("[OnEnable] After Atk : " + battleStat.Attack + ", AtkSpd : " + battleStat.AttackSpeed + ", CritChance : " + battleStat.CriticalChance + ", PenFixed : " + battleStat.PenetrationFixed + ", PenMult : " + battleStat.PenetrationMult);
 #endif
-		testCoroutine = StartCoroutine(test());
+		
     }
-	IEnumerator test()
-	{
-		float outVal = 0.0f;
-		while(true)
-		{
-			yield return oneSec;
-			Debug.Log("Name = " + name + " ///Health Desire = " + stat.GetDesireDict()[DesireType.Health].desireValue);
-				
-		}
-	}
     public void OnDisable()
     {
         //uniqueSkill.Deactivate();
@@ -547,7 +537,6 @@ public class SpecialAdventurer : Adventurer
         GameManager.Instance.PlayerAcceptedRaidEventHandler += OnPlayerRaidOrder;
         GameManager.Instance.PlayerRefusedRaidEventHandler += OnPlayerRaidRefusal;
 		Debug.Log("BossRaidCallEventHandler - " + GameManager.Instance.BossRaidCallEventHandler.GetInvocationList().Length);
-		
 
 	}
     #endregion
