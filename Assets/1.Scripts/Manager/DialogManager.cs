@@ -659,7 +659,7 @@ public class DialogManager : MonoBehaviour
 			yield return shakeWait;
 			shakeAmount -= 0.1f;
 		}
-		tr.position = origin;
+		tr.localPosition = originLocal;
 		
 	}
 	IEnumerator _FadeIn()
