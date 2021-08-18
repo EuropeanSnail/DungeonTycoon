@@ -58,11 +58,11 @@ public class BossRaidUI : MonoBehaviour
 
     private void Awake()
     {
-        NotBossPhase();
+		State = BossRaidUIState.NotBossPhase;
     }
-
-    // 도전 버튼
-    private void ShowBossChallengeBtn()
+	
+	// 도전 버튼
+	private void ShowBossChallengeBtn()
     {
         bossChallengeBtn.gameObject.SetActive(true);
     }
