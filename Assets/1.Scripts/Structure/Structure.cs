@@ -161,7 +161,7 @@ public class Structure : Place
 	public void EndMove()
 	{
 		isMovable = false;
-		GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 1);
+		GetComponentInChildren<SpriteRenderer>().color = new Color(1, 1, 1, 1);
 	}
 
 	void StartMoveEffect()
@@ -171,7 +171,7 @@ public class Structure : Place
 
 	IEnumerator _StartMoveEffect()
 	{
-		SpriteRenderer sp = GetComponent<SpriteRenderer>();
+		SpriteRenderer sp = GetComponentInChildren<SpriteRenderer>();
 		float factor = 0.1f;
         while (isMovable == true)
 		{

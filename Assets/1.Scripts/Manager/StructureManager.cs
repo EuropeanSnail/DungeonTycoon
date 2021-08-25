@@ -200,7 +200,7 @@ public class StructureManager : MonoBehaviour
 	public void AllocateStructure()
 	{
 		GameObject nearest = null;
-
+		
 		GameObject[] gos = GameObject.FindGameObjectsWithTag("Tile");
 		Vector2 pos = Camera.main.ScreenToWorldPoint(new Vector3(Camera.main.pixelWidth / 2, Camera.main.pixelHeight / 2, 0.0f));
 		float minDiff = Mathf.Infinity;
@@ -218,18 +218,18 @@ public class StructureManager : MonoBehaviour
 		}
         // 건설할 건물의 position 설정(가장 가까운 타일에 맞춰)
 		constructing.transform.position = new Vector3(nearest.transform.position.x, nearest.transform.position.y, -50.0f) ;
-
+		
 		//////////////////////////////////
 		SetStructurePoint(nearest.GetComponent<Tile>());
 		MoveStructure(nearest.GetComponent<Tile>());
 		
 		if (constructing.GetComponent<Structure>().GetisConstructable() == false)
 		{
-			constructing.GetComponent<SpriteRenderer>().color = new Color(1, 0, 0);
+			constructing.GetComponentInChildren<SpriteRenderer>().color = new Color(1, 0, 0);
 		}
 		else
 		{
-			constructing.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1);
+			constructing.GetComponentInChildren<SpriteRenderer>().color = new Color(1, 1, 1);
 		}
 		////////////////////////////////////
 		constructing.GetComponent<Structure>().StartMove();
@@ -408,11 +408,11 @@ public class StructureManager : MonoBehaviour
 		}
 		if (conStructure.GetisConstructable() == false)
 		{
-			constructing.GetComponent<SpriteRenderer>().color = new Color(1, 0, 0);
+			constructing.GetComponentInChildren<SpriteRenderer>().color = new Color(1, 0, 0);
 		}
 		else
 		{
-			constructing.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1);
+			constructing.GetComponentInChildren<SpriteRenderer>().color = new Color(1, 1, 1);
 		}
 	}
 	

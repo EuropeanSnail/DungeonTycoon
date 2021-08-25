@@ -233,8 +233,8 @@ public class TileMapGenerator : MonoBehaviour
                     tile_Object.tag = "non_Tile";
                     tile.SetNonTile(true);
                     
-                    tile_Object.transform.position = new Vector3((pivotX), (pivotY + 0.2f), (pivotZ));
-                    layer.AddTile(x, y, tile_Object);
+                    tile_Object.transform.position = new Vector3((pivotX), (pivotY), (pivotZ));//(pivotY + 0.2f), (pivotZ)); // 왜 + 0.2f?
+					layer.AddTile(x, y, tile_Object);
                 }
                 pivotX = pivotX + 0.5f * 100 / 75; // 2/3
                 pivotZ = pivotZ - 0.3f * 100 / 75; // 0.4

@@ -111,7 +111,7 @@ public class BuildPanel : UIObject {
 					entity.structureName.text = tempStructureJSON["name"];
 					entity.genreImage.sprite = genreImages[tempStructureJSON["genre"]];
 					entity.structureGenre.text = tempStructureJSON["genreDisplay"];
-					//entity.structureImage .....
+					entity.structureImage.sprite = Resources.Load<Sprite>("StructureImage/" + System.Enum.GetName(typeof(Category), i) + "/" + j);
 					entity.structureAreaImage.sprite = Resources.Load<Sprite>("StructureAreaImage/" + System.Enum.GetName(typeof(Category), i) + "/" + j);
 					entity.structureAreaImage.SetNativeSize();
 					entity.structureCharge.text = tempStructureJSON["charge"];
