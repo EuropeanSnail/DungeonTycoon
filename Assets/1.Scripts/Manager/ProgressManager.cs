@@ -100,19 +100,23 @@ public class ProgressManager : MonoBehaviour {
 	}
 	public void ConquerStarted(int areaNum) // 로드 시 이미 conquer 된것으로 나오기때문에 -- 다시 나오진 않을듯?
 	{
+		string path = string.Empty;
 		if (GetCurSpAdvName() == string.Empty)
 			return;
 		if(dialogBindingJson[GetCurSpAdvName().ToLower()][characterDialogProgressData[GetCurSpAdvName()]]["conquerstart"][areaNum.ToString()] != null)
-			DialogManager.Instance.StartDialog(dialogBindingJson[GetCurSpAdvName().ToLower()][characterDialogProgressData[GetCurSpAdvName()]]["conquerstart"][areaNum.ToString()]);
+			DialogManager.Instance.StartDialog(path = dialogBindingJson[GetCurSpAdvName().ToLower()][characterDialogProgressData[GetCurSpAdvName()]]["conquerstart"][areaNum.ToString()]);
 		Debug.Log("ConquerStarted() Called - " + areaNum);
+		Debug.Log(path);
 	}
 	public void ConquerEnded(int areaNum)
 	{
+		string path = string.Empty;
 		if (GetCurSpAdvName() == string.Empty)
 			return;
 		if (dialogBindingJson[GetCurSpAdvName().ToLower()][characterDialogProgressData[GetCurSpAdvName()]]["conquerend"][areaNum.ToString()] != null)
-			DialogManager.Instance.StartDialog(dialogBindingJson[GetCurSpAdvName().ToLower()][characterDialogProgressData[GetCurSpAdvName()]]["conquerend"][areaNum.ToString()]);
-		Debug.Log("ConquerEndted() Called - " + areaNum);
+			DialogManager.Instance.StartDialog(path = dialogBindingJson[GetCurSpAdvName().ToLower()][characterDialogProgressData[GetCurSpAdvName()]]["conquerend"][areaNum.ToString()]);
+		Debug.Log("ConquerEnded() Called - " + areaNum);
+		Debug.Log(path);
 	}
 	public void CheckCharacterSelected()
 	{

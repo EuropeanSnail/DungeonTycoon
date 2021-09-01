@@ -1,234 +1,233 @@
 {
-  "stage" : 
-  [
-	{},
+  "stage": [
+    {},
     {
-      "introduce" : "",
-      "scenestart" : "Dialogs/Stage/Stage1_Start",
-      "sceneend" : "Dialogs/Stage/Stage1_Victory",
-      "conquerstart" : {},
-      "conquerend" : {},
-      "buildstructure" : "Dialogs/Stage/Tutorial_BuildStructure",
-      "equipitem" : "Dialogs/Stage/Tutorial_EquipItem",
-      "opentrain" : "Dialogs/Stage/Tutorial_OpenTrain"
+      "introduce": "",
+      "scenestart": "Dialogs/Stage/Stage1_Start",
+      "sceneend": "Dialogs/Stage/Stage1_Victory",
+      "conquerstart": {},
+      "conquerend": {},
+      "buildstructure": "Dialogs/Stage/Tutorial_BuildStructure",
+      "equipitem": "Dialogs/Stage/Tutorial_EquipItem",
+      "opentrain": "Dialogs/Stage/Tutorial_OpenTrain"
     },
     {
-      "scenestart" : "Dialogs/Stage/Stage2_Start",
-      "sceneend" : "Dialogs/Stage/Stage2_Victory"
+      "scenestart": "Dialogs/Stage/Stage2_Start",
+      "sceneend": "Dialogs/Stage/Stage2_Victory"
     },
     {
-      "scenestart" : "Dialogs/Stage/Stage3_Start",
-      "sceneend" : "Dialogs/Stage/Stage3_Victory"
+      "scenestart": "Dialogs/Stage/Stage3_Start",
+      "sceneend": "Dialogs/Stage/Stage3_Victory"
     }
   ],
-  "oldman" :
-    [
-      {
-        "conquerend" : 
-        {
-          "2" : "Dialogs/Stage/Tutorial_BossPhase"            
-        }
-      },
-      {
-        "introduce" : "",
-        "scenestart" : "",
-        "sceneend" : "",
-        "conquerstart" : {},
-        "conquerend" : {}
-      },
-      {
-        "introduce" : "",
-        "scenestart" : "",
-        "sceneend" : "",
-        "conquerstart" : {},
-        "conquerend" : {}
-      },
-      {
-        "introduce" : "",
-        "scenestart" : "",
-        "sceneend" : "",
-        "conquerstart" : {},
-        "conquerend" : {}
+  "oldman": [
+    {
+      "conquerend": {
+        "2": "Dialogs/Stage/Tutorial_BossPhase"
       }
-    ],
-  "hana" :
-    [
-      {
-		"introduce" : "Dialogs/Hana/0"
+    },
+    {
+      "introduce": "",
+      "scenestart": "",
+      "sceneend": "",
+      "conquerstart": {},
+      "conquerend": {}
+    },
+    {
+      "introduce": "",
+      "scenestart": "",
+      "sceneend": "",
+      "conquerstart": {},
+      "conquerend": {}
+    },
+    {
+      "introduce": "",
+      "scenestart": "",
+      "sceneend": "",
+      "conquerstart": {},
+      "conquerend": {}
+    }
+  ],
+  "hana": [
+    {
+      "introduce": "Dialogs/Hana/0"
+    },
+    {
+      "conquerstart": {
+        "2": "Dialogs/Hana/1_1"
       },
-      {
-        "conquerstart" : 
-        {
-          "3" : "Dialogs/Hana/1_1"  
-        },
-        "conquerend" : 
-        {
-          "5" : "Dialogs/Hana/1_2"
-        }
-      },
-      {
-        "introduce" : "",
-        "conquerstart" : 
-        {
-          "6" : "Dialogs/Hana/2"
-        },
-        "conquerend" : {}
-      },
-      {
-        "introduce" : "",
-        "scenestart" : "",
-        "sceneend" : "",
-        "conquerstart" : {},
-        "conquerend" : {}
+      "conquerend": {
+        "2": "Dialogs/Hana/1_2"
       }
-    ],
-  "iris" :
-    [
-      {
-		"introduce" : "Dialogs/Iris/0"
+    },
+    {
+      "introduce": "",
+      "conquerstart": {
+        "2": "Dialogs/Hana/2"
       },
-      {
-        "conquerstart" : {},
-        "conquerend" : {"5" : "Dialogs/Iris/1"}
+      "conquerend": {}
+    },
+    {
+      "introduce": "",
+      "scenestart": "",
+      "sceneend": "",
+      "conquerstart": {},
+      "conquerend": {}
+    }
+  ],
+  "iris": [
+    {
+      "introduce": "Dialogs/Iris/0"
+    },
+    {
+      "conquerstart": {
+        "2": "Dialogs/Iris/1"
       },
-      {
-        "introduce" : "",
-        "conquerstart" : {
-          "3" : "Dialogs/Iris/2_1",
-          "6" : "Dialogs/Iris/2_1"                
-        },
-        "conquerend" : {}
+      "conquerend": {}
+    },
+    {
+      "introduce": "",
+      "conquerstart": {
+        "2": "Dialogs/Iris/2_1",
+        "4": "Dialogs/Iris/2_2"
       },
-      {
-        "introduce" : "",
-        "scenestart" : "",
-        "sceneend" : "",
-        "conquerstart" : {},
-        "conquerend" : {}
+      "conquerend": {}
+    },
+    {
+      "introduce": "",
+      "scenestart": "",
+      "sceneend": "",
+      "conquerstart": {},
+      "conquerend": {}
+    }
+  ],
+  "maxi": [
+    {
+      "introduce": "Dialogs/Maxi/0"
+    },
+    {
+      "conquerstart": {
+        "2": "Dialogs/Maxi/1"
+      },
+      "conquerend": {}
+    },
+    {
+      "introduce": "",
+      "conquerstart": {
+        "2": "Dialogs/Maxi/2_1",
+        "4": "Dialogs/Maxi/2_2"
+      },
+      "conquerend": {}
+    },
+    {
+      "introduce": "",
+      "scenestart": "",
+      "sceneend": "",
+      "conquerstart": {},
+      "conquerend": {}
+    }
+  ],
+  "murat": [
+    {
+      "introduce": "Dialogs/Murat/0"
+    },
+    {
+      "conquerstart": {
+        "2": "Dialogs/Murat/1"
+      },
+      "conquerend": {}
+    },
+    {
+      "introduce": "",
+      "conquerstart": {
+        "2": "Dialogs/Murat/2"
+      },
+      "conquerend": {}
+    },
+    {
+      "introduce": "",
+      "scenestart": "",
+      "sceneend": "",
+      "conquerstart": {},
+      "conquerend": {}
+    }
+  ],
+  "nyang": [
+    {
+      "introduce": "Dialogs/Nyang/0"
+    },
+    {
+      "conquerstart": {
+        "2": "Dialogs/Nyang/1"
+      },
+      "conquerend": {}
+    },
+    {
+      "introduce": "",
+      "conquerstart": {
+        "2": "Dialogs/Nyang/2"
+      },
+      "conquerend": {}
+    },
+    {
+      "introduce": "",
+      "scenestart": "",
+      "sceneend": "",
+      "conquerstart": {},
+      "conquerend": {}
+    }
+  ],
+  "wal": [
+    {
+      "introduce": "Dialogs/Wal/0"
+    },
+    {
+      "conquerstart": {
+        "2": "Dialogs/Wal/1"
+      },
+      "conquerend": {}
+    },
+    {
+      "introduce": "",
+      "conquerstart": {
+        "2": "Dialogs/Wal/2"
+      },
+      "conquerend": {}
+    },
+    {
+      "introduce": "",
+      "scenestart": "",
+      "sceneend": "",
+      "conquerstart": {},
+      "conquerend": {}
+    }
+  ],
+  "yeonhwa": [
+    {
+      "introduce": "Dialogs/Yeonhwa/0"
+    },
+    {
+      "conquerstart": {
+        "2": "Dialogs/Yeonhwa/1_1"
+      },
+      "conquerend": {
+        "2": "Dialogs/Yeonhwa/1_2"
       }
-    ],
-  "maxi" :
-    [
-      {
-		"introduce" : "Dialogs/Maxi/0"
+    },
+    {
+      "introduce": "",
+      "conquerstart": {
+        "2": "Dialogs/Yeonhwa/2_1",
+        "4": "Dialogs/Yeonhwa/2_2"
       },
-      {
-        "conquerstart" : {},
-        "conquerend" : {"5" : "Dialogs/Maxi/1"}
-      },
-      {
-        "introduce" : "",
-        "conquerstart" : {
-          "3" : "Dialogs/Maxi/2_1",
-          "6" : "Dialogs/Maxi/2_2"
-        },
-        "conquerend" : {}
-      },
-      {
-        "introduce" : "",
-        "scenestart" : "",
-        "sceneend" : "",
-        "conquerstart" : {},
-        "conquerend" : {}
-      }
-    ],
-  "murat" :
-    [
-      {
-		"introduce" : "Dialogs/Murat/0"
-      },
-      {
-        "conquerstart" : {},
-        "conquerend" : {"5" : "Dialogs/Murat/1"}
-      },
-      {
-        "introduce" : "",
-        "conquerstart" : {
-          "6" : "Dialogs/Murat/2"
-        },
-        "conquerend" : {}
-      },
-      {
-        "introduce" : "",
-        "scenestart" : "",
-        "sceneend" : "",
-        "conquerstart" : {},
-        "conquerend" : {}
-      }
-    ],
-  "nyang" :
-    [
-      {
-		"introduce" : "Dialogs/Nyang/0"
-      },
-      {
-        "conquerstart" : {},
-        "conquerend" : {"5" : "Dialogs/Nyang/1"}
-      },
-      {
-        "introduce" : "",
-        "conquerstart" : {
-          "6" : "Dialogs/Nyang/2"
-        },
-        "conquerend" : {}
-      },
-      {
-        "introduce" : "",
-        "scenestart" : "",
-        "sceneend" : "",
-        "conquerstart" : {},
-        "conquerend" : {}
-      }
-    ],
-  "wal" :
-    [
-      {
-		"introduce" : "Dialogs/Wal/0"
-      },
-      {
-        "conquerstart" : {},
-        "conquerend" : {"5" : "Dialogs/Wal/1"}
-      },
-      {
-        "introduce" : "",
-        "conquerstart" : {
-          "6" : "Dialogs/Wal/2"
-        },
-        "conquerend" : {}
-      },
-      {
-        "introduce" : "",
-        "scenestart" : "",
-        "sceneend" : "",
-        "conquerstart" : {},
-        "conquerend" : {}
-      }
-    ],
-  "yeonhwa" :
-    [
-      {
-		"introduce" : "Dialogs/Yeonhwa/0"
-      },
-      {
-        "conquerstart" : {"3" : "Dialogs/Yeonhwa/1_1"},
-        "conquerend" : {"5" : "Dialogs/Yeonhwa/1_2"}
-      },
-      {
-        "introduce" : "",
-        "conquerstart" : {
-          "3" : "Dialogs/Yeonhwa/2_1",
-          "6" : "Dialogs/Yeonhwa/2_2"
-        },
-        "conquerend" : {
-          
-        }
-      },
-      {
-        "introduce" : "",
-        "scenestart" : "",
-        "sceneend" : "",
-        "conquerstart" : {},
-        "conquerend" : {}
-      }
-    ]
+      "conquerend": {}
+    },
+    {
+      "introduce": "",
+      "scenestart": "",
+      "sceneend": "",
+      "conquerstart": {},
+      "conquerend": {}
+    }
+  ]
 }

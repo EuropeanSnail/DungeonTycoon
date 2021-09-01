@@ -590,6 +590,8 @@ public class CombatAreaManager : MonoBehaviour
 			{
 				GameManager.Instance.OnHuntingAreaOpenToPublic();
 				GameManager.Instance.OpenNextStage();
+				ProgressManager.Instance.ConquerEnded(PublicHuntingAreaIndex);
+				ProgressManager.Instance.ConquerStarted(ConqueringHuntingAreaIndex);
 			}
 			
 
@@ -598,8 +600,7 @@ public class CombatAreaManager : MonoBehaviour
 		{
 			BossAreaConquerStart();
 		}
-		ProgressManager.Instance.ConquerEnded(PublicHuntingAreaIndex);
-		ProgressManager.Instance.ConquerStarted(ConqueringHuntingAreaIndex);
+		
 		HuntingAreaOpenToPublic(); //빈거     
         HuntingAreaConquerStart(); //빈거
 		
@@ -613,9 +614,14 @@ public class CombatAreaManager : MonoBehaviour
         {
 			PublicHuntingAreaIndex++;
             HuntingAreaOpenToPublic();
-            if(isLoaded == false)
-                GameManager.Instance.OnHuntingAreaOpenToPublic();
+			if (isLoaded == false)
+			{
+				GameManager.Instance.OnHuntingAreaOpenToPublic();
+				ProgressManager.Instance.ConquerEnded(PublicHuntingAreaIndex);
+				ProgressManager.Instance.ConquerStarted(ConqueringHuntingAreaIndex);
+			}
             HuntingAreaConquerStart();
+
         }
 
         if (BossAreaIndex < bossAreas.Count - 1)

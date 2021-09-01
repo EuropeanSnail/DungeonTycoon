@@ -562,7 +562,7 @@ public class StructureManager : MonoBehaviour
         //structureJson 는 일단 손 안댐.
     }
 
-    public void ConstructStructureFromData(StructureData input) // Resolve Type, ResolveAmount 내용 추가해야됨. 20200528
+    public void ConstructStructureFromData(StructureData input) 
     {
         #region InstantiateStructure()
         tempStructureCategory = input.structureCategory;
