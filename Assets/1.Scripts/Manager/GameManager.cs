@@ -1420,13 +1420,13 @@ public class GameManager : MonoBehaviour
     // Scene 로드
     public void LoadScene(int sceneNum)
     {
-        Application.LoadLevel(sceneNum);
-    }
+		SceneManager.LoadScene(sceneNum);
+	}
     public void LoadScene(string sceneName)
     {
-        Application.LoadLevel(sceneName);
-    }
-
+		SceneManager.LoadScene(sceneName);
+	}
+	
     // 모험가 스탯 리셋
     public Stat ResetTravelerStat(Traveler owner)
     {

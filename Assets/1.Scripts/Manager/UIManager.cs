@@ -276,11 +276,11 @@ public class UIManager : MonoBehaviour {
 	public void CloseAll()
 	{
 		trainPanel.SetActive(false);
-		infoPanel.SetActive(false);
+		//infoPanel.SetActive(false);
 		buildPanel.SetActive(false);
 		settingsPanel.SetActive(false);
-		talkPanel.SetActive(false);
-		CloseBuildPanel();
+		//talkPanel.SetActive(false);
+		//CloseBuildPanel();
 		isShowing = false;
 	}
     public void SelectTimeScale(GameObject go)

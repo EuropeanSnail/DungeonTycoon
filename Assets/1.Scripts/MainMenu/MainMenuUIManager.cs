@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class MainMenuUIManager : MonoBehaviour {
 
@@ -68,10 +69,20 @@ public class MainMenuUIManager : MonoBehaviour {
     
     public void StartNewGame()
     {
-        GameManager.Instance.LoadScene("1");
+		SceneManager.LoadScene("1");
     }
 
-    
+	public void LoadGame()
+	{
+		SaveLoadManager slm = null;
+		slm = SaveLoadManager.Instance;
+		if (slm == null)
+		{
+			Debug.Log("SaveLoadManager does not exist!");
+			return;
+		}
+		slm.Load();
+	}
 
 
 }

@@ -29,7 +29,7 @@ public class SaveLoadManager : MonoBehaviour
         }
     }
     string savedataPath;
-    GameSavedata savedata;
+    GameSavedata savedata = null;
     public bool isLoadedGame
     {
         get { return savedata != null; }
@@ -68,6 +68,11 @@ public class SaveLoadManager : MonoBehaviour
     public void Load()
     {
         LoadFromSave();
+		if (savedata == null)
+		{
+			Debug.LogError("Savefile does not exist!");
+			return;
+		}
         LoadScene(savedata.sceneName);
         //InstantiateFromSave();
     }
